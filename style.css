@@ -1,0 +1,125 @@
+:root {
+    --dark800: #2B2D42;
+    --dark600: #555881;
+    --dark400: #8d99ae;
+    --light: #edf2f4;
+    --contrast: #f12229;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Play', sans-serif;
+}
+
+body {
+    background-color: var(--dark400);
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.navBar {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    background-color: var(--dark800);
+
+}
+
+.oppaLogo {
+    height: 15rem;
+    text-align: center;
+}
+
+.oppaName {
+    color: var(--contrast);
+    text-shadow: .75px .75px var(--dark400);
+}
+
+.oppaFitnessLogo {
+    height: 10rem;
+}
+
+.oppaNavList {
+    display: flex;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: 100ms;
+}
+
+.navoptions {
+    color: var(--light);
+    font-size: large;
+    text-decoration: none;
+    transition: 400ms;
+}
+
+.navoptions:hover {
+    display: flex;
+    color: var(--light);
+    transform: scale(1.2);
+}
+
+
+.showEquipment {
+    height: 950px;
+    width: 100%;
+}
+
+
+
+.callToAct {
+    height: 300px;
+    width: 100%;
+    background-color: var(--dark600);
+}
+
+.showMore {
+    height: 950px;
+    width: 100%;
+}
+
+.MainFoot {
+    position: relative;
+    display: flex;
+    height: 20rem;
+    width: 100%;
+    background-color: var(--dark800);
+    border: 3px solid grey;
+}
+
+.footerLogo {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+}
+
+.footerLeft {
+    display: flex;
+    gap: 7rem;
+    justify-content: right;
+    align-items: center;
+}
+
+.vLiner {
+    height: 13rem;
+    border: 3px solid var(--light);
+    margin-right: 3rem;
+}
+
+.footerRight {
+    display: flex;
+    color: var(--light);
+    margin-top: 3rem;
+}
+
+.col-4>h6>a {
+    text-decoration: none;
+    color: var(--light);
+}
