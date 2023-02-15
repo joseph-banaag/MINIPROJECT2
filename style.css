@@ -57,7 +57,7 @@ body {
     color: var(--light);
     font-size: large;
     text-decoration: none;
-    transition: 400ms;
+    transition: width 400ms, height 400ms, transform 400ms;
 }
 
 .navoptions:hover {
@@ -123,3 +123,88 @@ body {
     text-decoration: none;
     color: var(--light);
 }
+
+
+
+.company {
+    color: var(--contrast);
+    text-shadow: .75px .75px var(--dark400);
+}
+
+.gym {
+    color: var(--contrast);
+    text-shadow: .75px .75px var(--dark400);
+}
+
+.socialMed {
+    color: var(--contrast);
+    text-shadow: .75px .75px var(--dark400);
+}
+
+/* ! APPOINTMENT FORM */
+.section1 {
+    height: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.section1>h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.formsectn1 {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.floatingName {
+    color: rgba(128, 128, 128, 0.692);
+}
+
+.formcontTitle {
+    display: grid;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.form-control {
+    width: 40rem;
+}
+
+.forName {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.firstName {
+    width: 19.5rem;
+}
+
+.lastName {
+    width: 19.5rem;
+}
+
+.submitbtn1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.submitbtn1>button>a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ! APPOINTMENT FORM */
+
+/* ! SIGN UP FORM */
+
+
+/* ! SIGN UP FORM */
