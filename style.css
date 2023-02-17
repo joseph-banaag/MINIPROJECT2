@@ -70,7 +70,7 @@ body {
 .showEquipment {
     height: 1050px;
     width: 100%;
-    background: url(./img/OppaFreeWeightSection1.jpg);
+    background: url(./img/oppaBG.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -81,7 +81,6 @@ body {
     height: 1050px;
     width: 100%;
     border: 3px solid red;
-    backdrop-filter: blur(5px);
 }
 
 /* .heroImg {
@@ -93,10 +92,10 @@ body {
 .callToAct {
     height: 700px;
     width: 100%;
-    border: 3px solid green;
     background-color: var(--dark600);
 }
-.callToAct>h1{
+
+.callToAct>h1 {
     font-size: 4rem;
 }
 
@@ -105,13 +104,9 @@ body {
 }
 
 .chatStyle {
-    height:400px;
+    height: 400px;
 }
 
-.chatleft {
-    border: 3px solid green;
-
-}
 
 .submitbtnforchat {
     display: flex;
