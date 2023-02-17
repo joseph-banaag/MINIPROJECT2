@@ -1,0 +1,82 @@
+git tutorial 
+- https://www.youtube.com/watch?v=QJ0iUNe27c8
+- https://www.youtube.com/watch?v=z8CYDyFqzp0&list=PLEiEAq2VkUUJs7lyLgSsRlnd9syrFBzSM&index=11
+
+DIFFERENT COMMANDS IN GIT:
+
+git config - configure the username and email address 
+git init -  initialize the local git repository
+git add - is use to add one or more staging files in the repository
+git diff - is use to see the changes made to the file
+git commit - is use to commit changes to head but not to the remote repository
+git reset - is use to undo local changes to the state of the a git repository
+git status -  is use to see the status of the directory for the files that has been added or created or deleted.
+git merge -  is use to join brances into an active branch
+git push - is use to upload content from local repository to the remote repository
+git pull - this will download the remote repository to the local repository
+git fetch - downloads the content from the required remote repository
+git merge - combines multiple sequeneces of commits into a single branch
+git pull - is used to fetch and merge changes from the remote repository to the local repository
+rm -rf .git - is used to remove .git folder in a folder
+
+
+
+
+
+
+
+			THE USE OF GIT COMMANDS TO PUSH REPOSITORY TO REMOTE/GITHUB:
+					
+				___________________________________________
+	
+1. Start by configuring the user name and email address
+used the following: 
+	git config --global user.name "Krukri"
+	git config --global user.email josephrbanaag51@gmail.com
+
+2. Use git config --list to check if the configuration made was done correctly.
+3. use pwd to check the current folder or directory 
+4. use ls to see the list of available folder on the current drive
+5. use cd to change directory to the selected folder.
+6. use mkdir to create a directory and the use cd again to go into that created folder for the git init
+7. always use pwd to make sure you are inside the correct folder
+8. use git init to start initialization once on the targeted folder
+9. use touch filename eg. touch index.html to add a file in the folder
+10. once done, use git add . to add the file that will be commited soon
+11. you can use git rm to remove the changes
+12. use git commit -m "message" 
+13. use git log to see the logs of all the files
+14. note: once there are changes made to the repo always check using
+		 git status and then 
+		 git add . and then 
+		 git commit -m ""
+15. once done, create a repository on github.com
+16. copy the git remote add origin plus the link starting from https://
+17. paste the coppied command to the terminal and then hit enter
+18. use git remote -v 
+19. use git push -u origin master
+
+			USE THIS TO UPDATE EXITING DIRECTORY WITH CURRENT GIT.INIT
+			
+20. use git status to check for any changes	
+21. use git add .
+22. use git commit -m ""
+23. use git remote -v
+24. use git push -u origin master
+
+
+
+
+			THE USE OF GIT COMMANDS TO PULL REPOSITORY TO LOCAL/PC
+			
+				___________________________________________
+	
+	
+1. go to the folder where to create director for the pull request using terminal
+2. use pwd, ls, mkdir to create a new folder for the pull request
+3. once the folder is created use git init 
+4. once done, use git pull plus the clone link from the remot repository 
+
+
+
+

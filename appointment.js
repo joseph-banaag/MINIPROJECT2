@@ -9,6 +9,10 @@ const div6 = document.createElement("div");
 const div7 = document.createElement("div");
 const div8 = document.createElement("div");
 const div9 = document.createElement("div");
+const div10 = document.createElement("div");
+const div11 = document.createElement("div");
+const div12 = document.createElement("div");
+const div13 = document.createElement("div");
 
 // VALUES
 div.innerText = "Appointment Form";
@@ -19,6 +23,12 @@ div4.innerHTML = "<input></input>";
 div5.innerText = "Name:";
 div6.innerHTML = "<input></input>";
 div7.innerText = "Contact Number";
+div8.innerHTML = "<input></input>";
+div9.innerText = "Address:";
+div10.innerHTML = "<input></input>";
+div11.innerHTML = "<input></input>";
+div12.innerHTML = "<input></input>";
+div13.innerHTML = "<input></input>";
 
 // STYLE
 div.setAttribute(
@@ -34,6 +44,7 @@ div3.setAttribute(
   "font-size: 2rem; display: flex; justify-content: center; margin-block: 1rem;"
 );
 div4.setAttribute("style", "display: flex; justify-content: center;");
+div4.type = "datetime-local";
 div5.setAttribute(
   "style",
   "display: flex; justify-content: center; font-size: 2rem;"
@@ -43,5 +54,28 @@ div7.setAttribute(
   "style",
   "display: flex; justify-content: center; font-size: 2rem;"
 );
+div8.setAttribute("style", "display: flex; justify-content: center;");
+div9.setAttribute(
+  "style",
+  "font-size: 2rem; display: flex; justify-content: center; margin-block: 1rem;"
+);
+div10.setAttribute("style", "display: flex; justify-content: center;");
+div11.setAttribute("style", "display: flex; justify-content: center;");
+div12.setAttribute("style", "display: flex; justify-content: center;");
+div13.setAttribute("style", "display: flex; justify-content: center;");
 
-body.append(div, div2, div3, div4, div5, div6, div7, div8, div9);
+body.append(
+  div,
+  div2,
+  div3,
+  div4,
+  div5,
+  div6,
+  div7,
+  div8,
+  div9,
+  div10,
+  div11,
+  div12,
+  div13
+);
