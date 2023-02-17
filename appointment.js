@@ -18,7 +18,7 @@ div3.innerText = "Appointment Date and Time:";
 div4.innerHTML = "<input></input>";
 div5.innerText = "Name:";
 div6.innerHTML = "<input></input>";
-div7.innerText = "Contant Number";
+div7.innerText = "Contact Number";
 
 // STYLE
 div.setAttribute(
