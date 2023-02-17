@@ -31,8 +31,8 @@ rm -rf .git - is used to remove .git folder in a folder
 	
 1. Start by configuring the user name and email address
 used the following: 
-	git config --global user.name "Krukri"
-	git config --global user.email josephrbanaag51@gmail.com
+	git config --global user.name "yourUserName"
+	git config --global user.email youremail@address
 
 2. Use git config --list to check if the configuration made was done correctly.
 3. use pwd to check the current folder or directory 
