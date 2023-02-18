@@ -92,7 +92,7 @@ body {
 
 }
 
-.heroArea{
+.heroArea {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -257,9 +257,40 @@ body {
     color: white;
 }
 
-/* ! APPOINTMENT FORM */
+.slideImg {
+    height: 50rem;
+    width: 80rem;
+}
 
-/* ! SIGN UP FORM */
+#xtraDiv {
+    color: white;
+    text-shadow: 1.25px 1.25px black;
+    font-size: 2rem;
+}
 
+.bottombar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--contrast);
+    color: #f3efe0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    padding: 10px;
+}
 
-/* ! SIGN UP FORM */
+.bottombar__content {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottombar__close {
+    background: none;
+    border: none;
+    color: #f3efe0;
+    cursor: pointer;
+    font-size: 2em;
+}
