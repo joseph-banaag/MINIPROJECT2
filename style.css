@@ -281,14 +281,15 @@ body {
     padding: 10px;
     border: 4px solid var(--dark800);
     border-radius: 0px 50px 50px 0px;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     align-items: center;
     margin-bottom: 1rem;
 
 }
 
 .bottombar__content {
+    position: relative;
     max-width: 500px;
     margin: auto;
     display: flex;
@@ -301,10 +302,12 @@ body {
     border: none;
     color: #f3efe0;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 3em;
+
 }
 
 #subsBtn:hover {
-    background: none;
-    color: black;
+    /* background: none; */
+    background-color: var(--dark800);
+
 }
