@@ -75,12 +75,27 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+
 }
 
 .heroSection {
     height: 1050px;
     width: 100%;
     border: 3px solid red;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.heroArea{
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 /* .heroImg {
