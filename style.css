@@ -1,5 +1,6 @@
 :root {
     --dark800: #2B2D42;
+    --dark900: black;
     --dark600: #555881;
     --dark400: #8d99ae;
     --light: #edf2f4;
@@ -37,7 +38,7 @@ body {
 
 .oppaName {
     color: var(--contrast);
-    text-shadow: .75px .75px var(--dark400);
+    text-shadow: .75px .75px var(--dark900);
 }
 
 .oppaFitnessLogo {
@@ -183,17 +184,17 @@ body {
 
 .company {
     color: var(--contrast);
-    text-shadow: .75px .75px var(--dark400);
+    text-shadow: .75px .75px var(--dark900);
 }
 
 .gym {
     color: var(--contrast);
-    text-shadow: .75px .75px var(--dark400);
+    text-shadow: .75px .75px var(--dark900);
 }
 
 .socialMed {
     color: var(--contrast);
-    text-shadow: .75px .75px var(--dark400);
+    text-shadow: .75px .75px var(--dark900);
 }
 
 /* ! APPOINTMENT FORM */
@@ -271,20 +272,28 @@ body {
 .bottombar {
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    width: 50%;
+    margin: auto;
     background: var(--contrast);
     color: #f3efe0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     padding: 10px;
+    border: 4px solid var(--dark800);
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
 }
 
 .bottombar__content {
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
+
 }
 
 .bottombar__close {
@@ -293,4 +302,9 @@ body {
     color: #f3efe0;
     cursor: pointer;
     font-size: 2em;
+}
+
+#subsBtn:hover {
+    background: none;
+    color: black;
 }
