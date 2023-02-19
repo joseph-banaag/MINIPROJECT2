@@ -311,6 +311,12 @@ body {
     background-color: var(--dark800);
 
 }
+.rowImg1{
+    width: 100%;
+}
 
+.rowContainter{
+    width: 40rem;
+}
 /* !@media resources */
 

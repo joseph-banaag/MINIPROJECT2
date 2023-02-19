@@ -1,206 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>| Oppa Fitness Gym</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>| Oppa Fitness Gym</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <!-- ? Favicon -->
+    <link rel="icon" href="img/OppaFitnessGym.png" type="image/icon type" />
 
-  <!-- ? Favicon -->
-  <link rel="icon" href="img/OppaFitnessGym.png" type="image/icon type" />
+    <!-- ?Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ?Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- ?Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!-- ?Style -->
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <div class="navBar">
+      <div class="col-5 oppaLogo">
+        <img
+          src="img/OppaFitnessGym.png"
+          alt="GymLogo"
+          class="oppaFitnessLogo"
+        />
+        <h1 class="oppaName">Oppa Fitness gym</h1>
+      </div>
+      <div class="col-7 oppaNavList">
+        <div class="col-2 4 oppaNavListItems">
+          <button class="btn">
+            <a href="./apptForm.html" class="navoptions"
+              >Schedule your appointment</a
+            >
+          </button>
+        </div>
 
-<body>
-
-  <div class="navBar">
-    <div class="col-5 oppaLogo">
-      <img src="img/OppaFitnessGym.png" alt="GymLogo" class="oppaFitnessLogo">
-      <h1 class="oppaName">Oppa Fitness gym</h1>
+        <div class="col-2 4 oppaNavListItems">
+          <button class="btn">
+            <a href="#" class="navoptions">Training & Coaching</a>
+          </button>
+        </div>
+        <div class="col-2 4 oppaNavListItems">
+          <button class="btn">
+            <a href="#" class="navoptions">Find our Location</a>
+          </button>
+        </div>
+        <div class="col-2 4 oppaNavListItems">
+          <button class="btn">
+            <a href="#" class="navoptions">Chat with us</a>
+          </button>
+        </div>
+        <div class="col-2 4 oppaNavListItems">
+          <button class="btn">
+            <a href="signup.html" class="navoptions">Log in / Sign up</a>
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="col-7 oppaNavList">
-      <div class="col-2 4 oppaNavListItems">
-        <button class="btn ">
-          <a href="./apptForm.html" class="navoptions">Schedule your appointment</a>
-        </button>
-      </div>
 
-      <div class="col-2 4 oppaNavListItems">
-        <button class="btn ">
-          <a href="#" class="navoptions">Training & Coaching</a></button>
-      </div>
-      <div class="col-2 4 oppaNavListItems">
-        <button class="btn ">
-          <a href="#" class="navoptions">Find our Location</a>
-        </button>
-      </div>
-      <div class="col-2 4 oppaNavListItems">
-        <button class="btn ">
-          <a href="#" class="navoptions">Chat with us</a>
-        </button>
-      </div>
-      <div class="col-2 4 oppaNavListItems">
-
-        <button class="btn ">
-          <a href="signup.html" class="navoptions">Log in / Sign up</a>
-        </button>
-
+    <div class="showEquipment">
+      <div class="heroSection">
+        <div
+          class="container"
+          style="
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+            height: 10rem;
+            align-items: center;
+            backdrop-filter: blur(10px);
+          "
+        >
+          <h3
+            style="
+              color: white;
+              font-size: clamp(1.5rem, 10vw, 4rem);
+              text-shadow: 1.25px 1.25px black;
+            "
+          >
+            Good health comes from a disciplined mind and consistent workout...
+          </h3>
+        </div>
+        <img
+          src="img/OppaFitnessGym.png"
+          alt="heroarea"
+          style="width: 30rem; height: 30rem; margin-top: 2rem"
+          class="heroArea"
+        />
       </div>
     </div>
-  </div>
 
-
-
-  <div class="showEquipment">
-    <div class="heroSection">
-      <div class="container"
-        style=" display: flex; justify-content: center; margin-top: 5rem; height: 10rem; align-items: center; backdrop-filter: blur(10px);">
-        <h3 style="color: white; font-size: clamp(1.5rem, 10vw, 4rem); text-shadow: 1.25px 1.25px black; ">Good health
-          comes from a
-          disciplined mind and consistent workout...</h3>
-      </div>
-      <img src="img/OppaFitnessGym.png" alt="heroarea" style="width: 30rem; height: 30rem; margin-top: 2rem;"
-        class="heroArea">
-
-    </div>
-  </div>
-
-  <div class="callToAct">
-    <h1 class="p-5 text-light" style="color: white;
-    text-shadow: 1.25px 1.25px black;">We are so excited to knowing you!</h1>
-    <div class="chat_section">
-      <div class="col-4 chatStyle text-light text-end pe-2">
-        <h3 class="mt-4 me-3 " style="color: white;
-    text-shadow: 1.25px 1.25px black;">May I know what is your</h3>
-      </div>
-      <div class="col-4 chatStyle ">
-        <div>
-
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Name"
-              style="border: solid grey 1px; border-radius: 30px; height: 5rem; width: 30rem;">
-            <label for="floatingInput"><span style="color: #8D99AE; padding: 5px; margin: 5px;">Name</span></label>
+    <div class="callToAct">
+      <h1
+        class="p-5 text-light"
+        style="color: white; text-shadow: 1.25px 1.25px black"
+      >
+        We are so excited to knowing you!
+      </h1>
+      <div class="chat_section">
+        <div class="col-4 chatStyle text-light text-end pe-2">
+          <h3
+            class="mt-4 me-3"
+            style="color: white; text-shadow: 1.25px 1.25px black"
+          >
+            May I know what is your
+          </h3>
+        </div>
+        <div class="col-4 chatStyle">
+          <div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Name"
+                style="
+                  border: solid grey 1px;
+                  border-radius: 30px;
+                  height: 5rem;
+                  width: 30rem;
+                "
+              />
+              <label for="floatingInput"
+                ><span style="color: #8d99ae; padding: 5px; margin: 5px"
+                  >Name</span
+                ></label
+              >
+            </div>
           </div>
-
+          <div style="height: 6rem"></div>
+          <div class="form-floating mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Name"
+              style="
+                border: solid grey 1px;
+                border-radius: 30px;
+                height: 5rem;
+                width: 30rem;
+              "
+            />
+            <label for="floatingInput"
+              ><span style="color: #8d99ae; padding: 5px; margin: 5px"
+                >Mobile number</span
+              ></label
+            >
+          </div>
         </div>
-        <div style="height: 6rem"></div>
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="floatingInput" placeholder="Name"
-            style="border: solid grey 1px; border-radius: 30px; height: 5rem; width: 30rem;">
-          <label for="floatingInput"><span style="color: #8D99AE; padding: 5px; margin: 5px;">Mobile
-              number</span></label>
+        <div class="col-4 chatStyle">
+          <div style="height: 6rem"></div>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Name"
+              style="
+                border: solid grey 1px;
+                border-radius: 30px;
+                height: 5rem;
+                width: 30rem;
+              "
+            />
+            <label for="floatingInput"
+              ><span style="color: #8d99ae; padding: 5px; margin: 5px"
+                >How can we help you in acheiving your dream body?</span
+              ></label
+            >
+          </div>
+          <div style="height: 6rem"></div>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Name"
+              style="
+                border: solid grey 1px;
+                border-radius: 30px;
+                height: 5rem;
+                width: 30rem;
+              "
+            />
+            <label for="floatingInput"
+              ><span style="color: #8d99ae; padding: 5px; margin: 5px"
+                >Tell us more how busy you are.</span
+              ></label
+            >
+          </div>
         </div>
-
-
       </div>
-      <div class="col-4 chatStyle">
-        <div style="height: 6rem"></div>
-        <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingInput" placeholder="Name"
-            style="border: solid grey 1px; border-radius: 30px; height: 5rem; width: 30rem;">
-          <label for="floatingInput"><span style="color: #8D99AE; padding: 5px; margin: 5px;">How can we help you in
-              acheiving your
-              dream body?</span></label>
-        </div>
-        <div style="height: 6rem"></div>
-        <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingInput" placeholder="Name"
-            style="border: solid grey 1px; border-radius: 30px; height: 5rem; width: 30rem;">
-          <label for="floatingInput"><span style="color: #8D99AE; padding: 5px; margin: 5px;">Tell us more how busy you
-              are.</span></label>
-        </div>
-      </div>
-    </div>
-    <div class="submitbtnforchat">
-      <button class="btn btn-dark btn-lg submitbtn" type="button">
-        <a href="index.html">Submit</a>
-      </button>
-    </div>
-
-  </div>
-
-  <div class="showMore">
-    <h3 class="m-4 p-4 text-center text-light" id="xtraDiv">Come and visit our GYM and start your fitness journey with
-      us.</h3>
-
-    <!-- !START OF THE CAROUSEL -->
-    <div class="container-fluid">
-      
-    </div>
-
-    <!-- !END OF THE CAROUSEL -->
-
-  </div>
-
-  <div class="container-fluid MainFoot">
-    <div class="col-6 footerLeft">
-      <img src="img/OppaFitnessGym.png" alt="GymLogo" class="footerLogo">
-      <div class="vLiner">
-      </div>
-    </div>
-    <div class="col-6 footerRight">
-      <div class="col-4">
-        <h3 class="company">Company</h3>
-
-        <h6><a href="#">About Us</a></h6>
-        <h6><a href="#">Contact Us</a></h6>
-        <h6><a href="#">Site Map</a></h6>
-
-      </div>
-
-      <div class="col-4">
-        <h3 class="gym">Gym</h3>
-
-        <h6><a href="#">Training</a></h6>
-        <h6><a href="#">Coaching</a></h6>
-
-      </div>
-      <div class="col-4">
-        <h3 class="socialMed">Social Media</h3>
-        <h6><a href="#">About Us</a></h6>
-        <h6><a href="#">Contact Us</a></h6>
-        <h6><a href="#">Site Map</a></h6>
-
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Bottom banner -->
-  <div class="bottombar text-center">
-    <div class="bottombar__content">
-      <div class="bottombar__text">
-        <h5>Subscribe now to receive updates on our discount!</h5>
-        <button class="btn btn-secondary text-light d-flex justify-content-center"
-          style="border: 1px white solid; margin: auto; border-radius: 20px;" id="subsBtn">
-          Subscribe
+      <div class="submitbtnforchat">
+        <button class="btn btn-dark btn-lg submitbtn" type="button">
+          <a href="index.html">Submit</a>
         </button>
       </div>
-      <button class="bottombar__close" type="button">&times;</button>
     </div>
-  </div>
 
-  <script>
-    document.addEventListener("click", function (e) {
-      if (e.target.className.indexOf("bottombar__close") !== -1) {
-        document.body.removeChild(e.target.parentElement.parentElement);
-      }
-    });
-  </script>
-  <!-- Bottom banner -->
+    <div class="showMore">
+      <h3 class="m-4 p-4 text-center text-light" id="xtraDiv">
+        Come and visit our GYM and start your fitness journey with us.
+      </h3>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</body>
+      <!-- !START OF THE CAROUSEL -->
+      <div class="container-fluid border border-light d-flex gap-4 justify-content-center">
+        <div class="col-4 border border-danger rowContainter">
+          <img src="./img/OppaBackView.jpg" alt="" class="rowImg1" />
+        </div>
 
+        <div class="col-4 border border-danger rowContainter">
+          <img src="./img/OppaBackView.jpg" alt="" class="rowImg1" />
+        </div>
+
+        <div class="col-4 border border-danger rowContainter">
+          <img src="./img/OppaBackView.jpg" alt="" class="rowImg1" />
+        </div>
+
+         <div class="col-4 border border-danger rowContainter">
+          <img src="./img/OppaBackView.jpg" alt="" class="rowImg1" />
+        </div>
+
+        <div class="col-4 border border-danger rowContainter">
+          <img src="./img/OppaBackView.jpg" alt="" class="rowImg1" />
+        </div>
+
+        <div class="col-4 border border-danger rowContainter">
+          <img src="./img/OppaBackView.jpg" alt="" class="rowImg1" />
+        </div>
+      </div>
+
+      <!-- !END OF THE CAROUSEL -->
+    </div>
+
+    <div class="container-fluid MainFoot">
+      <div class="col-6 footerLeft">
+        <img src="img/OppaFitnessGym.png" alt="GymLogo" class="footerLogo" />
+        <div class="vLiner"></div>
+      </div>
+      <div class="col-6 footerRight">
+        <div class="col-4">
+          <h3 class="company">Company</h3>
+
+          <h6><a href="#">About Us</a></h6>
+          <h6><a href="#">Contact Us</a></h6>
+          <h6><a href="#">Site Map</a></h6>
+        </div>
+
+        <div class="col-4">
+          <h3 class="gym">Gym</h3>
+
+          <h6><a href="#">Training</a></h6>
+          <h6><a href="#">Coaching</a></h6>
+        </div>
+        <div class="col-4">
+          <h3 class="socialMed">Social Media</h3>
+          <h6><a href="#">About Us</a></h6>
+          <h6><a href="#">Contact Us</a></h6>
+          <h6><a href="#">Site Map</a></h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom banner -->
+    <div class="bottombar text-center">
+      <div class="bottombar__content">
+        <div class="bottombar__text">
+          <h5>Subscribe now to receive updates on our discount!</h5>
+          <button
+            class="btn btn-secondary text-light d-flex justify-content-center"
+            style="border: 1px white solid; margin: auto; border-radius: 20px"
+            id="subsBtn"
+          >
+            Subscribe
+          </button>
+        </div>
+        <button class="bottombar__close" type="button">&times;</button>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("click", function (e) {
+        if (e.target.className.indexOf("bottombar__close") !== -1) {
+          document.body.removeChild(e.target.parentElement.parentElement);
+        }
+      });
+    </script>
+    <!-- Bottom banner -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
