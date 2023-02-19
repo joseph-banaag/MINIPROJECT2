@@ -69,7 +69,7 @@ body {
 
 
 .showEquipment {
-    height: 1050px;
+    min-height: 1050px;
     width: 100%;
     background: url(./img/oppaBG.png);
     background-size: cover;
@@ -106,7 +106,7 @@ body {
 } */
 
 .callToAct {
-    height: 700px;
+    min-height: 700px;
     width: 100%;
     background-color: var(--dark600);
 }
@@ -136,9 +136,14 @@ body {
 }
 
 .showMore {
-    height: 950px;
+    min-height: 750px;
     width: 100%;
-    border: 3px solid red;
+}
+
+#xtraDiv {
+    color: black;
+    text-shadow: 1px 1px white;
+    font-size: 3rem;
 }
 
 .MainFoot {
@@ -263,11 +268,6 @@ body {
     width: 80rem;
 }
 
-#xtraDiv {
-    color: white;
-    text-shadow: 1.25px 1.25px black;
-    font-size: 2rem;
-}
 
 .bottombar {
     position: fixed;
@@ -311,12 +311,10 @@ body {
     background-color: var(--dark800);
 
 }
-.rowImg1{
+
+.rowImg1 {
     width: 100%;
 }
 
-.rowContainter{
-    width: 40rem;
-}
-/* !@media resources */
 
+/* !@media resources */
