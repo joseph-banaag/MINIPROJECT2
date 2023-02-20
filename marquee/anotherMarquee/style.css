@@ -1,0 +1,22 @@
+.marquee-content {
+    display: flex;
+    min-width: 100vw;
+    gap: 1rem;
+    overflow: hidden;
+    justify-content: space-around;
+    animation: scroll;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% -1rem));
+    }
+}
+
+.scroll {
+    animation: scroll 10s linear infinite;
+}

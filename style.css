@@ -22,6 +22,12 @@ body {
     padding: 0px;
 }
 
+.titleHead {
+    color: var(--light);
+    text-shadow: .75px .75px var(--dark900);
+
+}
+
 
 .navBar {
     height: 15rem;
@@ -119,11 +125,6 @@ body {
     display: flex;
 }
 
-.chatStyle {
-    height: 400px;
-}
-
-
 .submitbtnforchat {
     display: flex;
     justify-content: center;
@@ -136,13 +137,13 @@ body {
 }
 
 .showMore {
-    min-height: 750px;
+    min-height: 40rem;
     width: 100%;
 }
 
 #xtraDiv {
     color: black;
-    text-shadow: 1px 1px white;
+    text-shadow: 1px 1px grey;
     font-size: 3rem;
 }
 
@@ -203,12 +204,19 @@ body {
 }
 
 /* ! APPOINTMENT FORM */
+
+.form-containter {
+    max-width: 100%;
+    padding: 5rem;
+}
+
 .section1 {
     height: 10rem;
     display: grid;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    max-width: 100%;
 }
 
 .section1>h1 {
@@ -263,12 +271,9 @@ body {
     color: white;
 }
 
-.slideImg {
-    height: 50rem;
-    width: 80rem;
-}
+/* ! end of appointment form */
 
-
+/* !banner */
 .bottombar {
     position: fixed;
     bottom: 0;
@@ -312,13 +317,75 @@ body {
 
 }
 
+/* !banner */
+
 .rowImg1 {
     width: 100%;
+    min-height: fixed;
 }
-
 
 
 
 /* !@media resources */
 
-/* https: //www.youtube.com/watch?v=9qpffyA8Vis */
+@media (max-width: 1300px) {
+    .showMore {
+        min-height: 35rem;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+    .oppaNavList{
+        display: none;
+    }
+
+    .oppaLogo{
+        display: block;
+        justify-content: center;
+        margin: auto;
+    }
+    .invisible-div {
+        display: none;
+    }
+
+    .chat_section {
+        display: block;
+    }
+
+
+    .chat-question {
+        width: 100%;
+        height: 5rem;
+    }
+
+
+    .chat-question-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .chat-container-1 {
+        margin: auto;
+        width: auto;
+
+    }
+
+    .chat-question-item-container {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+
+
+}
+
+@media (max-width: 700px) {
+    .showMore {
+        min-height: 15rem;
+    }
+
+}

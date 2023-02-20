@@ -10,49 +10,76 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/OppaFitnessGym.png" type="image/icon type" />
+
+    <!-- ?Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
+
 </head>
 
+<style>
+    body {
+        background-image: linear-gradient(#2B2D42, #555881, #8d99ae, #edf2f4);
+        min-height: 100vh;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Play', sans-serif;
+    }
+    .signUp-container{
+        padding: 5rem;
+    }
+    .formcontTitle {
+        color: black;
+        text-shadow: .95px .95px grey;
+    }
+</style>
+
 <body>
-
-    <div class="section1">
-        <h1>Create your account</h1>
-    </div>
-    <!-- ?Name -->
-    <div class="formsectn1">
-        <h4 class="formcontTitle">Name:</h4>
-        <div class="forName">
-            <div class="form-floating">
-                <input type="text" class="form-control firstName" id="floatingName" placeholder="First Name" />
-                <label for="floatingName" class="floatingName">First</label>
+    <div class="signUp-container">
+        <div class="section1">
+            <h1 class="titleHead">Create your account</h1>
+        </div>
+        <!-- ?Name -->
+        <div class="formsectn1">
+            <h4 class="formcontTitle">Name:</h4>
+            <div class="forName">
+                <div class="form-floating">
+                    <input type="text" class="form-control firstName" id="floatingName" placeholder="First Name" />
+                    <label for="floatingName" class="floatingName">First</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control lastName" id="floatingName" placeholder="Last Name" />
+                    <label for="floatingName" class="floatingName ">Last</label>
+                </div>
             </div>
+        </div>
+        <!-- ?CONTACT NUMBER -->
+        <div class="formsectn1">
+            <h4 class="formcontTitle">Contact Number:</h4>
             <div class="form-floating">
-                <input type="text" class="form-control lastName" id="floatingName" placeholder="Last Name" />
-                <label for="floatingName" class="floatingName ">Last</label>
+                <input type="number" class="form-control" id="floatingName" placeholder="Time" />
+                <label for="floatingName" class="floatingName">09*********</label>
             </div>
         </div>
-    </div>
-    <!-- ?CONTACT NUMBER -->
-    <div class="formsectn1">
-        <h4 class="formcontTitle">Contact Number:</h4>
-        <div class="form-floating">
-            <input type="number" class="form-control" id="floatingName" placeholder="Time" />
-            <label for="floatingName" class="floatingName">09*********</label>
+        <!-- ?EMAIL -->
+        <div class="formsectn1">
+            <h4 class="formcontTitle">Email Address:</h4>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingName" placeholder="Time" />
+                <label for="floatingName" class="floatingName">**********@example.com</label>
+            </div>
+        </div>
+        <div class="submitbtn1">
+            <button class="btn btn-dark btn-lg submitbtn" type="button">
+                <a href="index.html">Submit</a>
+            </button>
         </div>
     </div>
-    <!-- ?EMAIL -->
-    <div class="formsectn1">
-        <h4 class="formcontTitle">Email Address:</h4>
-        <div class="form-floating">
-            <input type="text" class="form-control" id="floatingName" placeholder="Time" />
-            <label for="floatingName" class="floatingName">**********@example.com</label>
-        </div>
-    </div>
-    <div class="submitbtn1">
-        <button class="btn btn-dark btn-lg submitbtn" type="button">
-            <a href="index.html">Submit</a>
-        </button>
-    </div>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
