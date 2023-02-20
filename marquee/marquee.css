@@ -81,10 +81,10 @@ span {
 
 @keyframes scrollLeft {
     from {
-        transform: translateX(var(--scrool-start));
+        transform: translateX(0);
     }
 
     to {
-        transform: translateX(var(--scroll-end));
+        transform: translateX(100% - 2rem);
     }
 }

@@ -25,9 +25,17 @@ body {
 .titleHead {
     color: var(--light);
     text-shadow: .75px .75px var(--dark900);
+    margin: 2rem;
+}
+
+.title-item{
+    font-size: 4rem;
 
 }
 
+.sub-title-item{
+    font-size: 1.25rem;
+}
 
 .navBar {
     height: 15rem;
@@ -321,7 +329,7 @@ body {
 
 .rowImg1 {
     width: 100%;
-    min-height: fixed;
+    height: auto;
 }
 
 
@@ -389,6 +397,12 @@ body {
         min-height: 15rem;
     }
 
+    #xtraDiv {
+        color: black;
+        text-shadow: 1px 1px grey;
+        font-size: 2rem;
+    }
+
     .MainFoot {
         width: 100%;
         display: block;
@@ -399,6 +413,7 @@ body {
         align-content: center;
         border: 3px solid red;
         align-items: center;
+        padding-bottom: 4rem;
     }
 
     .footerLogo {
@@ -447,5 +462,11 @@ body {
 
     .chat-container-1 {
         display: none;
+    }
+
+    #xtraDiv {
+        color: black;
+        text-shadow: 1px 1px grey;
+        font-size: 1rem;
     }
 }
