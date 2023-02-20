@@ -65,6 +65,8 @@ body {
     font-size: large;
     text-decoration: none;
     transition: width 400ms, height 400ms, transform 400ms;
+    text-shadow: .75px .75px var(--dark900);
+
 }
 
 .navoptions:hover {
@@ -378,9 +380,6 @@ body {
         margin: auto;
 
     }
-
-
-
 }
 
 @media (max-width: 700px) {
