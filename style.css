@@ -152,7 +152,7 @@ body {
 .MainFoot {
     position: relative;
     display: flex;
-    height: 20rem;
+    height: auto;
     width: 100%;
     background-color: var(--dark800);
     border: 3px solid grey;
@@ -177,11 +177,19 @@ body {
     margin-right: 3rem;
 }
 
+
 .footerRight {
     display: flex;
     color: var(--light);
     margin-top: 3rem;
 }
+
+.footerLink-container {
+    display: flex;
+    color: var(--light);
+    margin-top: 3rem;
+}
+
 
 .col-4>h6>a {
     text-decoration: none;
@@ -190,17 +198,7 @@ body {
 
 
 
-.company {
-    color: var(--contrast);
-    text-shadow: .75px .75px var(--dark900);
-}
-
-.gym {
-    color: var(--contrast);
-    text-shadow: .75px .75px var(--dark900);
-}
-
-.socialMed {
+.footer-right-items {
     color: var(--contrast);
     text-shadow: .75px .75px var(--dark900);
 }
@@ -339,15 +337,16 @@ body {
 
 
 @media (max-width: 1200px) {
-    .oppaNavList{
+    .oppaNavList {
         display: none;
     }
 
-    .oppaLogo{
+    .oppaLogo {
         display: block;
         justify-content: center;
         margin: auto;
     }
+
     .invisible-div {
         display: none;
     }
@@ -382,9 +381,71 @@ body {
     }
 }
 
+@media(max-width: 900px) {}
+
 @media (max-width: 700px) {
+
     .showMore {
         min-height: 15rem;
     }
 
+    .MainFoot {
+        width: 100%;
+        display: block;
+        justify-content: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        text-align: center;
+        align-content: center;
+        border: 3px solid red;
+        align-items: center;
+    }
+
+    .footerLogo {
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    .footerRight {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: auto;
+
+    }
+
+    .footerLeft {
+        width: 100%;
+    }
+
+    .footerLink-container {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .footer-right-items {
+        /* margin-bottom: 1rem; */
+        align-items: center;
+    }
+
+    .vLiner {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .heroArea {
+        display: none;
+    }
+
+    .chat-container-1 {
+        display: none;
+    }
 }
