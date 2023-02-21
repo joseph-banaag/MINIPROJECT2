@@ -90,34 +90,50 @@ body {
 
 
 .showEquipment {
-    min-height: 1050px;
+    max-height: 1050px;
     width: 100%;
     background: url(./img/oppaBG.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     scroll-behavior: smooth;
-    display: flex;
-    justify-content: center;
+    background-position: center;
+    background-attachment: fixed;
 
 }
 
 .heroSection {
-    height: 1050px;
+    max-height: 1050px;
     width: 100%;
     border: 3px solid red;
     margin: auto;
     display: flex;
     flex-direction: column;
+}
 
-
-
+.hero-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    min-height: 10rem;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 2rem;
+    color: white;
+    font-size: clamp(1.5rem, 10vw, 4rem);
+    text-shadow: 1.25px 1.25px black;
 }
 
 .heroArea {
     display: flex;
     justify-content: center;
     margin: auto;
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+
 }
 
 /* .heroImg {
@@ -127,9 +143,10 @@ body {
 } */
 
 .callToAct {
-    min-height: 700px;
+    max-height: 700px;
     width: 100%;
     background-color: var(--dark600);
+    margin-bottom: 2rem;
 }
 
 .callToAct>h1 {
@@ -144,6 +161,11 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
+}
+
+.chat-wrapper {
+    border: 3px solid var(--dark600);
+    margin-bottom: 2rem;
 }
 
 .submitbtnforchat>button>a {
@@ -426,7 +448,7 @@ body {
 
 @media (max-width: 1400px) {
     .chat_section {
-        display: none;
+        display: block;
     }
 }
 
@@ -439,6 +461,7 @@ body {
 
 
 @media (max-width: 1200px) {
+
     #hamburger-icon {
         display: block;
     }
@@ -557,22 +580,39 @@ body {
 
 @media (max-width: 600px) {
 
+
+    .heroSection {
+        width: 100%;
+    }
+
+    .heroArea {
+        height: 20rem;
+        width: 20rem;
+    }
+
     .oppaFitnessLogo {
-        margin: auto;
-        margin-left: -1.75rem;
-        margin-bottom: .75rem;
+        margin-right: auto;
+        margin-left: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .oppaLogo {
+        width: 100%;
+    }
+
+    .oppaName {
+        display: block;
     }
 
     .navBar {
-        height: 20rem;
+        height: 15rem;
         margin: auto;
         margin: 0;
         padding: 0;
     }
 
-    .heroArea {
-        display: none;
-    }
+
 
     .chat-container-1 {
         display: none;
@@ -584,6 +624,9 @@ body {
         font-size: 1rem;
     }
 
+    .footer-items {
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width: 250px) {
