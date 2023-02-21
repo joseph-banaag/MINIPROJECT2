@@ -22,23 +22,28 @@ body {
     padding: 0px;
 }
 
+/* ! START OF THE NAVBAR SECTION */
+
+
+/* ! END OF THE NAVBAR SECTION */
+
 .titleHead {
     color: var(--light);
     text-shadow: .75px .75px var(--dark900);
     margin: 2rem;
 }
 
-.title-item{
+.title-item {
     font-size: 4rem;
 
 }
 
-.sub-title-item{
+.sub-title-item {
     font-size: 1.25rem;
 }
 
 .navBar {
-    height: 15rem;
+    min-height: 15rem;
     width: 100%;
     display: flex;
     background-color: var(--dark800);
@@ -332,9 +337,98 @@ body {
     height: auto;
 }
 
+/* !  START OF THE HAMBURGER MENU */
+
+.hamburger-menu-container {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+}
+
+#hamburger-icon {
+    width: 100%;
+    display: none;
+    margin-bottom: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#hamburger-icon ul {
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 0px;
+}
+
+#hamburger-icon a {
+    text-decoration: none;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 650ms;
+    overflow: hidden;
+    transition: 600ms;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu a {
+    color: var(--light);
+    font-size: large;
+    text-decoration: none;
+    transition: width 400ms, height 400ms, transform 400ms;
+    text-shadow: .75px .75px var(--dark900);
+    margin: 2rem;
+
+}
+
+
+
+/* !  END OF THE HAMBURGER MENU */
+
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+
+}
+
+.open .bar1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
 
 
 /* !@media resources */
+
+@media (max-width: 1400px) {
+    .chat_section {
+        display: none;
+    }
+}
 
 @media (max-width: 1300px) {
     .showMore {
@@ -345,6 +439,10 @@ body {
 
 
 @media (max-width: 1200px) {
+    #hamburger-icon {
+        display: block;
+    }
+
     .oppaNavList {
         display: none;
     }
@@ -387,9 +485,11 @@ body {
         margin: auto;
 
     }
+
+
 }
 
-@media(max-width: 900px) {}
+
 
 @media (max-width: 700px) {
 
@@ -456,6 +556,20 @@ body {
 }
 
 @media (max-width: 600px) {
+
+    .oppaFitnessLogo {
+        margin: auto;
+        margin-left: -1.75rem;
+        margin-bottom: .75rem;
+    }
+
+    .navBar {
+        height: 20rem;
+        margin: auto;
+        margin: 0;
+        padding: 0;
+    }
+
     .heroArea {
         display: none;
     }
@@ -468,5 +582,12 @@ body {
         color: black;
         text-shadow: 1px 1px grey;
         font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 250px) {
+    .footerLogo {
+        margin-right: -1.3rem;
     }
 }
