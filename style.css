@@ -180,7 +180,7 @@ body {
 
 }
 
-#chat-left {
+#chat-right {
     margin-left: 15rem;
 }
 
@@ -513,12 +513,16 @@ body {
         width: 100%;
     }
 
+    .chat-list-container {
+        padding-right: 4rem;
+    }
+
     .chat-question-wrapper {
-        width: 100%;
         display: flex;
         justify-content: start;
-
     }
+
+
 
     #hamburger-icon {
         display: block;
@@ -541,9 +545,58 @@ body {
     }
 }
 
+@media (max-width: 950px) {
+    #chat-form-cta {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
+    }
 
+    #chat-header {
+        width: 100%;
+    }
+
+    .chat-list-container {
+        padding-right: 4rem;
+    }
+
+    .chat-question-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+
+    #chat-right {
+        margin-left: 10rem;
+    }
+
+}
 
 @media (max-width: 700px) {
+
+    #chat-form-cta {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #chat-header {
+        width: 100%;
+    }
+
+    .chat-list-container {
+        padding-right: 4rem;
+    }
+
+    .chat-question-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+
+    #chat-right {
+        margin-left: 5rem;
+    }
 
     .showMore {
         min-height: 15rem;
@@ -658,7 +711,76 @@ body {
     }
 }
 
+@media (max-width: 400px) {
+    #chat-form-cta {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #chat-header {
+        width: 100%;
+    }
+
+    .chat-list-container {
+        padding-right: 4rem;
+    }
+
+    .chat-question-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+
+    #chat-right {
+        margin-right: 10px;
+        padding-right: 10px;
+
+    }
+
+    #floatingInput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+}
+
 @media (max-width: 300px) {
+
+    #chat-form-cta {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #chat-header {
+        width: 100%;
+    }
+
+    .chat-list-container {
+        padding-right: 4rem;
+    }
+
+    .chat-question-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+
+    #chat-right {
+        margin-right: 10px;
+        padding-right: 10px;
+
+    }
+
+    #floatingInput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
     .chat-question {
         display: block;
         color: black;
@@ -688,5 +810,9 @@ body {
         margin: auto;
         display: inline;
         justify-content: center;
+    }
+
+    .footerLogo {
+        margin-right: -5px;
     }
 }
