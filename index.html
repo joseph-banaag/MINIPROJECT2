@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
   <div class="navBar">
     <div class="col-5 oppaLogo" id="brand">
       <img src="img/OppaFitnessGym.png" alt="GymLogo" class="oppaFitnessLogo" />
@@ -55,6 +56,7 @@
       </div>
     </div>
   </div>
+
   <div class="bg-dark">
     <div class="container d-flex justify-content-center bg-dark">
       <div class="hamburger-menu-container">
@@ -92,7 +94,6 @@
           Good health comes from a disciplined mind and consistent workout...
         </h3>
       </div>
-      <!-- <img src="img/OppaFitnessGym.png" alt="GymLogo" class="hero-img" /> -->
 
       <img src="img/OppaFitnessGym.png" alt="heroarea" class="heroArea" />
     </div>
@@ -103,81 +104,64 @@
       <h1 class="p-5 text-light text-center heading1" style="color: white; text-shadow: 1.25px 1.25px black">
         We are so excited to knowing you!
       </h1>
-
-      <div class="chat_section">
-        <div class="col-4 chat-question text-light text-end pe-2">
+  
+      <div class="container chat_section" id="chat-form-cta">
+        <div class="col-4 text-light text-end pe-2" id="chat-header">
           <h3 class="mt-4 me-3 chat-question-wrapper" style="color: white; text-shadow: 1.25px 1.25px black">
             May I know what is your...
           </h3>
         </div>
-
-        <div class="col-4 chat-container-1">
-          <div class="form-floating mb-3 chat-question-item-container">
-            <input type="text" class="form-control chat-question-item" id="floatingInput" placeholder="Name" style="
-                  border: solid grey 1px;
-                  border-radius: 30px;
-                  height: 5rem;
-                  width: 30rem;
-                " />
-            <label for="floatingInput"><span style="color: #8d99ae; padding: 5px; margin: 5px">Name</span></label>
-          </div>
-
-          <!-- blank -->
-          <div style="height: 6rem" class="invisible-div"></div>
-
-          <div class="form-floating mb-3">
-            <input type="number" class="form-control" id="floatingInput" placeholder="Name" style="
-                  border: solid grey 1px;
-                  border-radius: 30px;
-                  height: 5rem;
-                  width: 30rem;
-                " />
-            <label for="floatingInput"><span style="color: #8d99ae; padding: 5px; margin: 5px">Mobile
-                number</span></label>
-          </div>
-        </div>
-
-        <div class="col-4 chat-container-1">
-          <div style="height: 6rem" class="invisible-div"></div>
-
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Name" style="
-                  border: solid grey 1px;
-                  border-radius: 30px;
-                  height: 5rem;
-                  width: 30rem;
-                " />
-            <label for="floatingInput"><span style="color: #8d99ae; padding: 5px; margin: 5px">How can we help you in
-                acheiving your dream body?</span></label>
-          </div>
-          <div style="height: 6rem" class="invisible-div"></div>
-
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Name" style="
-                  border: solid grey 1px;
-                  border-radius: 30px;
-                  height: 5rem;
-                  width: 30rem;
-                " />
-            <label for="floatingInput"><span style="color: #8d99ae; padding: 5px; margin: 5px">Kindly tell us your
-                current body shape.</span></label>
+  
+        <div class="col-8 chat-column">
+          <div class="col-12 chat-list-container">
+  
+            <div class="form-floating mb-3 chat-question-item-container">
+              <input type="text" class="form-control form-left" id="floatingInput" placeholder="Name" />
+              <label for="floatingInput"><span style="color: #8d99ae; padding: 5px; margin: 5px">Name</span></label>
+            </div>
+  
+            <div class="form-floating mb-3 chat-question-item-container" id="chat-left">
+              <input type="number" class="form-control form-right" id="floatingInput" placeholder="Name" />
+              <label for="floatingInput"><span style="color: #8d99ae; padding: 5px; margin: 5px">Mobile
+                  number</span></label>
+            </div>
+  
+            <div class="form-floating mb-3 chat-question-item-container">
+              <input type="text" class="form-control form-left" id="floatingInput" placeholder="Name" />
+              <label for="floatingInput"><span style="color: #8d99ae; padding: 5px; margin: 5px">How can we help you in
+                  acheiving your dream body?</span></label>
+            </div>
+  
+            <div class="form-floating mb-3 chat-question-item-container" id="chat-left">
+              <input type="text" class="form-control form-right" id="floatingInput" placeholder="Name"
+                style="text-transform: capitalize;" />
+              <label for="floatingInput"><span style="color: #8d99ae; padding: 5px; margin: 5px">Tell me what is your
+                  body type.</span></label>
+            </div>
+  
           </div>
         </div>
+  
       </div>
 
-      <!-- !New chat section -->
-
-      
-
-      <!-- ! end of the new chat section -->
-
-      <div class="submitbtnforchat">
+      <div class="submitBtn">
+        <div class="button-container">
         <button class="btn btn-dark btn-lg submitbtn" type="button">
           <a href="index.html">Submit</a>
         </button>
+        </div>
       </div>
+  
+  
     </div>
   </div>
+
+
+  <!-- !New chat section -->
+
+
+
+  <!-- ! end of the new chat section -->
 
   <div class="showMore">
     <h3 class="m-4 p-4 text-center" id="xtraDiv">
@@ -226,8 +210,12 @@
       </div>
     </marquee>
 
-    <!-- !END OF THE MARQUEE -->
   </div>
+
+  <!-- !END OF THE MARQUEE -->
+
+
+
 
   <div class="container-fluid MainFoot">
     <div class="col-6 footerLeft">
