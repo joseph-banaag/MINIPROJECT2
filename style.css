@@ -28,20 +28,10 @@ body {
 
 /* ! END OF THE NAVBAR SECTION */
 
-.titleHead {
-    color: var(--light);
-    text-shadow: .75px .75px var(--dark900);
-    margin: 2rem;
-}
 
-.title-item {
-    font-size: 4rem;
 
-}
 
-.sub-title-item {
-    font-size: 1.25rem;
-}
+
 
 .navBar {
     min-height: 15rem;
@@ -289,66 +279,7 @@ body {
     text-shadow: .75px .75px var(--dark900);
 }
 
-/* ! APPOINTMENT FORM */
 
-.form-containter {
-    max-width: 100%;
-    padding: 5rem;
-}
-
-.section1 {
-    height: 10rem;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    max-width: 100%;
-}
-
-.section1>h1 {
-    margin: 0px;
-    padding: 0px;
-}
-
-.formsectn1 {
-    display: grid;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.floatingName {
-    color: rgba(128, 128, 128, 0.692);
-}
-
-.formcontTitle {
-    display: grid;
-    align-items: center;
-    margin-top: 1rem;
-
-}
-
-.form-control {
-    width: 40rem;
-}
-
-.forName {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.firstName {
-    width: 19.5rem;
-}
-
-.lastName {
-    width: 19.5rem;
-}
-
-
-
-/* ! end of appointment form */
 
 /* !banner */
 .bottombar {
@@ -396,9 +327,16 @@ body {
 
 /* !banner */
 
+/* !Marquee */
+#marquee-container {
+    width: 100%;
+}
+
 .rowImg1 {
     width: 100%;
     height: auto;
+    border: 3px solid var(--dark600);
+    border-radius: 20px;
 }
 
 /* !  START OF THE HAMBURGER MENU */
@@ -496,7 +434,7 @@ body {
 
 @media (max-width: 1300px) {
     .showMore {
-        min-height: 35rem;
+        min-height: 30rem;
     }
 
 }
@@ -567,6 +505,10 @@ body {
 
         #chat-right {
             margin-left: 10rem;
+        }
+
+        .showMore {
+            min-height: 18rem;
         }
 
     }
@@ -656,6 +598,10 @@ body {
 
         .vLiner {
             display: none;
+        }
+
+        .rowImg1 {
+            border-radius: 10px;
         }
     }
 
@@ -813,4 +759,5 @@ body {
         .footerLogo {
             margin-right: -5px;
         }
-    }}
+    }
+}

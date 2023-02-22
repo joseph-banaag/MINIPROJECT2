@@ -1,0 +1,165 @@
+body {
+    background-image: linear-gradient(#2B2D42, #555881, #8d99ae, #edf2f4);
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Play', sans-serif;
+}
+
+.formcontTitle {
+    color: black;
+    text-shadow: .95px .95px grey;
+}
+
+.titleHead {
+    width: 100%;
+    min-height: 11rem;
+    /* border: #2B2D42 4px solid; */
+    color: var(--light);
+    text-shadow: .75px .75px var(--dark900);
+    margin: 2rem;
+}
+
+.title-item {
+    font-size: 4rem;
+
+}
+
+.sub-title-item {
+    font-size: 1.25rem;
+}
+
+
+.form-containter {
+    max-width: 100%;
+    padding: 5rem;
+}
+
+.section1 {
+    height: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    max-width: 100%;
+}
+
+.section1>h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.formsectn1 {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.floatingName {
+    color: rgba(128, 128, 128, 0.692);
+}
+
+.formcontTitle {
+    display: grid;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.form-control {
+    width: 40rem;
+}
+
+.forName {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.firstName {
+    width: 19.5rem;
+}
+
+.lastName {
+    width: 19.5rem;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.bton-container {
+    margin-block: 1rem;
+}
+
+.bton-container a {
+    text-decoration: none;
+    color: white;
+    margin: 0.255rem;
+    padding: 0.255rem;
+
+}
+
+
+
+/* ! end of appointment form */
+@media (max-width: 800px) {
+
+    #titleHead {
+        /* border: 4px solid red; */
+        width: fit-content;
+        min-height: 15rem;
+        margin: 2rem;
+        padding: 2rem;
+        margin: auto;
+    }
+
+    .title-item {
+        font-size: 3rem;
+    }
+
+    .sub-title-item {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    .formsectn1 {
+        width: 100%;
+
+    }
+
+    .formcontTitle {
+        width: auto;
+    }
+
+    #floatingName {
+        width: 100%;
+        height: 1rem;
+        border: 4px solid red;
+    }
+
+
+
+    .submitbtn {
+        height: 4rem;
+        align-items: center;
+        margin-bottom: 0.25rem;
+    }
+
+    .bton-container a {
+        font-size: 1rem;
+    }
+}
