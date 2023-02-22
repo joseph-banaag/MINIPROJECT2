@@ -89,7 +89,6 @@ body {
     background-attachment: fixed;
     scroll-behavior: smooth;
     background-position: center;
-    background-attachment: fixed;
 
 }
 
@@ -509,6 +508,19 @@ body {
 
         .showMore {
             min-height: 18rem;
+        }
+
+        .showEquipment {
+            background: black;
+            backdrop-filter: blur(180px);
+            background-image: url(./img/throughfitness.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            scroll-behavior: smooth;
+            background-position: center;
+
+
         }
 
     }
