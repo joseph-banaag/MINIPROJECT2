@@ -77,39 +77,71 @@
                     </div>
 
 
-                    <!-- ?ADDRESS -->
-                    <div class="formsectn1" id="addressSection">
-                        <h4 class="formcontTitle">Address:</h4>
+                </div>
+            </div>
+
+            <!-- ?ADDRESS -->
+
+            <div class="formsectn1" id="nameSection">
+                <h4 class="formcontTitle">Name:</h4>
+                <div class="forName">
+                    <div class="form-floating" id="firstName">
+                        <input type="text" class="form-control firstName" id="floatingName" placeholder="First Name"
+                            style="text-transform: capitalize;" />
+                        <label for="floatingName" class="floatingName">First</label>
+                    </div>
+                    <div class="form-floating" id="lastName">
+                        <input type="text" class="form-control lastName" id="floatingName" placeholder="Last Name"
+                            style="text-transform: capitalize;" />
+                        <label for="floatingName" class="floatingName ">Last</label>
+                    </div>
+                </div>
+            </div>
 
 
+
+
+            <!-- ! THIS PART IS NOT WORKING  -->
+            <!-- ! I am create a new one please hold -->
+
+            <div class="container " style="display: none;">
+
+
+                <div class="formsectn1" id="addressSection">
+                    <h4 class="formcontTitle">Address:</h4>
+
+                    <div class="streetNamess">
                         <div class="form-floating" id="street1">
                             <input type="text" class="form-control" id="floatingName" placeholder="Time"
                                 style="text-transform: capitalize;" />
                             <label for="floatingName" class="floatingName">Street address</label>
                         </div>
+
                         <div class="form-floating" id="street2">
                             <input type="text" class="form-control" id="floatingName" placeholder="Time"
                                 style="text-transform: capitalize;" />
                             <label for="floatingName" class="floatingName">Address line 2</label>
                         </div>
 
+                    </div>
 
-                        <div class="forName">
-                            <div class="form-floating" id="cityName">
-                                <input type="text" class="form-control lastName" id="floatingName"
-                                    placeholder="Last Name" style="text-transform: capitalize;" />
-                                <label for="floatingName" class="floatingName ">City</label>
-                            </div>
 
-                            <div class="form-floating" id="city">
-                                <input type="number" class="form-control firstName" id="floatingName" placeholder="City"
-                                    style="text-transform: capitalize;" />
-                                <label for="floatingName" class="floatingName">ZIP Code</label>
-                            </div>
-
+                    <div class="forName">
+                        <div class="form-floating" id="zipcode">
+                            <input type="number" class="form-control lastName" id="floatingName" placeholder="Last Name"
+                                style="text-transform: capitalize;" />
+                            <label for="floatingName" class="floatingName ">ZIP code</label>
                         </div>
+
+                        <div class="form-floating" id="city">
+                            <input type="text" class="form-control firstName" id="floatingName" placeholder="City"
+                                style="text-transform: capitalize;" />
+                            <label for="floatingName" class="floatingName">City</label>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
 
             <div class="submitButton mt-3">

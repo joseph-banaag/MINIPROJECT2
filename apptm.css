@@ -142,7 +142,6 @@ body {
         text-align: start;
         align-items: center;
         align-content: start;
-        border: solid 3px red;
         width: auto;
 
     }
@@ -171,17 +170,14 @@ body {
 
     #appointmentSection {
         position: relative;
-        border: solid 3px yellow;
         /* height: 10rem; */
     }
 
     #appointmentSection div {
-        border: 3px solid white;
         margin: auto;
     }
 
     #nameSection {
-        border: solid 3px yellow;
         height: 10rem;
         position: relative;
     }
@@ -202,13 +198,13 @@ body {
 
     #contactSection {
         position: relative;
-        border: solid 3px yellow;
     }
 
+
     #addressSection {
+        border: 4px solid yellow;
         position: relative;
-        border: solid 3px yellow;
-        height: 25rem;
+        height: 50rem;
         margin: auto;
 
 
@@ -225,19 +221,16 @@ body {
 
     }
 
-    #cityName {
-        margin: auto;
-    }
+.streetNamess{
+    border: 4px solid red;
+}
 
 
     #street1 {
-        position: absolute;
-        top: 4rem;
-        /* display: none; */
+        border: #2B2D42 solid 4px;
     }
 
     #street2 {
-        position: absolute;
         top: 8rem;
         /* display: none; */
     }
@@ -248,12 +241,11 @@ body {
         /* display: none; */
     }
 
-    #zipCode {
-        position: absolute;
-        top: 16rem;
-        display: none;
+    #zipcode {
         margin: auto;
     }
+
+  
 
 
 }
