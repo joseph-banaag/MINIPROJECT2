@@ -201,49 +201,6 @@ body {
     }
 
 
-    #addressSection {
-        border: 4px solid yellow;
-        position: relative;
-        height: 50rem;
-        margin: auto;
-
-
-    }
-
-    #addressSection h4 {
-        width: 100vw;
-        margin: auto;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        top: 1rem;
-
-
-    }
-
-.streetNamess{
-    border: 4px solid red;
-}
-
-
-    #street1 {
-        border: #2B2D42 solid 4px;
-    }
-
-    #street2 {
-        top: 8rem;
-        /* display: none; */
-    }
-
-    #city {
-        position: absolute;
-        top: 12rem;
-        /* display: none; */
-    }
-
-    #zipcode {
-        margin: auto;
-    }
 
   
 
