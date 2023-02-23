@@ -701,6 +701,12 @@ body {
             align-items: center;
             align-content: center;
         }
+
+        .mobile-menu a {
+            display: inline-block;
+            margin: 5px;
+
+        }
     }
 
     @media (max-width: 300px) {
@@ -759,7 +765,7 @@ body {
         }
 
         .mobile-menu a {
-            display: block;
+            display: inline-block;
         }
 
         .open .mobile-menu {

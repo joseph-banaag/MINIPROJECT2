@@ -1,6 +1,9 @@
 body {
     background-image: linear-gradient(#2B2D42, #555881, #8d99ae, #edf2f4);
     min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 * {
@@ -110,62 +113,147 @@ body {
 
 
 /* ! end of appointment form */
-@media (max-width: 800px) {
 
-    #titleHead {
-        /* border: 4px solid red; */
-        width: fit-content;
-        min-height: 15rem;
-        margin: 2rem;
-        padding: 2rem;
+
+@media (max-width: 750px) {
+
+    .form-containter {
+        height: 100%;
+        /* width: 100%; */
+        border: solid 4px grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin: auto;
     }
 
-    .title-item {
-        font-size: 3rem;
-    }
-
-    .sub-title-item {
-        font-size: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .container {
-        margin-top: 4rem;
-        width: 100%;
-    }
-
-    .formsectn1 {
-        width: 100%;
+    #titleHead {
+        height: fit-content;
+        margin: auto;
 
     }
 
-    .formcontTitle {
-        width: auto;
+    .formcompiler {
+        height: fit-content;
     }
 
     #floatingName {
-        width: 100%;
-        height: 1rem;
-        margin: auto;
+        justify-content: start;
+        text-align: start;
         align-items: center;
-        padding: 1rem;
+        align-content: start;
+        border: solid 3px red;
+        width: auto;
+
     }
 
+    .appoinment-parent {
+        position: relative;
+    }
+
+    .appointment-wrapper {
+        margin: auto;
+
+    }
 
 
     .submitbtn {
-        height: 4rem;
-        align-items: center;
-        margin-bottom: 0.25rem;
-    }
-
-    .bton-container a {
         font-size: 1rem;
     }
-.floating-name{
-    color: black;
-}
+
+    .titleHead h1 {
+        font-size: 2rem;
+    }
+
+    .titleHead p {
+        font-size: 1rem;
+    }
+
+    #appointmentSection {
+        position: relative;
+        border: solid 3px yellow;
+        /* height: 10rem; */
+    }
+
+    #appointmentSection div {
+        border: 3px solid white;
+        margin: auto;
+    }
+
+    #nameSection {
+        border: solid 3px yellow;
+        height: 10rem;
+        position: relative;
+    }
+
+    #nameSection h4 {
+        margin: auto;
+    }
+
+    #firstName {
+        position: absolute;
+        top: 4rem;
+    }
+
+    #lastName {
+        position: absolute;
+        top: 8rem;
+    }
+
+    #contactSection {
+        position: relative;
+        border: solid 3px yellow;
+    }
+
+    #addressSection {
+        position: relative;
+        border: solid 3px yellow;
+        height: 25rem;
+        margin: auto;
+
+
+    }
+
+    #addressSection h4 {
+        width: 100vw;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        top: 1rem;
+
+
+    }
+
+    #cityName {
+        margin: auto;
+    }
+
+
+    #street1 {
+        position: absolute;
+        top: 4rem;
+        /* display: none; */
+    }
+
+    #street2 {
+        position: absolute;
+        top: 8rem;
+        /* display: none; */
+    }
+
+    #city {
+        position: absolute;
+        top: 12rem;
+        /* display: none; */
+    }
+
+    #zipCode {
+        position: absolute;
+        top: 16rem;
+        display: none;
+        margin: auto;
+    }
+
 
 }
