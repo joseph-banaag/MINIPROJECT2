@@ -42,174 +42,176 @@
 </style>
 
 <body>
-    <div class="signUp-container m-5">
+    <div class="container">
+        <div class="signUp-container m-5">
 
-        <div class="container" id="signup-wrapper">
-            <div class="section1">
-                <h1 class="titleHead title-item">Create your account</h1>
-            </div>
-            <!-- ?Name -->
-            <div class="formsectn1">
-                <h4 class="formcontTitle">Name:</h4>
-                <div class="forName">
-                    <div class="form-floating" id="firsName">
-                        <input type="text" class="form-control firstName" id="floatingName" placeholder="First Name"
-                            style="text-transform: capitalize;" />
-                        <label for="floatingName" class="floatingName">First</label>
+            <div class="container" id="signup-wrapper">
+                <div class="section1">
+                    <h1 class="titleHead title-item">Create your account</h1>
+                </div>
+                <!-- ?Name -->
+                <div class="formsectn1">
+                    <h4 class="formcontTitle">Name:</h4>
+                    <div class="forName">
+                        <div class="form-floating" id="firsName">
+                            <input type="text" class="form-control firstName" id="floatingName" placeholder="First Name"
+                                style="text-transform: capitalize;" />
+                            <label for="floatingName" class="floatingName">First</label>
+                        </div>
+                        <div class="form-floating" id="lastName">
+                            <input type="text" class="form-control lastName" id="floatingName" placeholder="Last Name"
+                                style="text-transform: capitalize;" />
+                            <label for="floatingName" class="floatingName ">Last</label>
+                        </div>
                     </div>
-                    <div class="form-floating" id="lastName">
-                        <input type="text" class="form-control lastName" id="floatingName" placeholder="Last Name"
-                            style="text-transform: capitalize;" />
-                        <label for="floatingName" class="floatingName ">Last</label>
-                    </div>
                 </div>
-            </div>
-            <!-- ?CONTACT NUMBER -->
-            <div class="formsectn1" id="signupCon-section">
-                <h4 class="formcontTitle">Contact Number:</h4>
-                <div class="form-floating">
-                    <input type="number" class="form-control" id="floatingName" placeholder="Time" />
-                    <label for="floatingName" class="floatingName">09*********</label>
-                </div>
-            </div>
-            <!-- ?EMAIL -->
-            <div class="formsectn1" id="signupEmail">
-                <h4 class="formcontTitle">Email Address:</h4>
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="floatingName" placeholder="Time" />
-                    <label for="floatingName" class="floatingName">**********@example.com</label>
-                </div>
-            </div>
-
-            <div class="submitBtn">
-                <div class="button-container">
-                    <button class="btn btn-dark btn-lg submitbtn" type="button">
-                        <a href="index.html">Submit</a>
-                    </button>
-                </div>
-            </div>
-
-            <!-- ? SIGN IN INSTEAD-->
-            <div class="login-options" style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
-
-                <div class="signin-form" style="margin-right: -4rem;">
-                    <h4 class="formcontTitle">Username and password to sign in:</h4>
+                <!-- ?CONTACT NUMBER -->
+                <div class="formsectn1" id="signupCon-section">
+                    <h4 class="formcontTitle">Contact Number:</h4>
                     <div class="form-floating">
-                        <div class="form-floating" style="margin-block: 1rem; 
+                        <input type="number" class="form-control" id="floatingName" placeholder="Time" />
+                        <label for="floatingName" class="floatingName">09*********</label>
+                    </div>
+                </div>
+                <!-- ?EMAIL -->
+                <div class="formsectn1" id="signupEmail">
+                    <h4 class="formcontTitle">Email Address:</h4>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingName" placeholder="Time" />
+                        <label for="floatingName" class="floatingName">**********@example.com</label>
+                    </div>
+                </div>
+
+                <div class="submitBtn">
+                    <div class="button-container">
+                        <button class="btn btn-dark btn-lg submitbtn" type="button">
+                            <a href="index.html">Submit</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ? SIGN IN INSTEAD-->
+                <div class="login-options" style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
+
+                    <div class="signin-form" style="margin-right: -4rem;">
+                        <h4 class="formcontTitle">Username and password to sign in:</h4>
+                        <div class="form-floating">
+                            <div class="form-floating" style="margin-block: 1rem; 
                 justify-content: center;
                 width: 100%;">
-                            <input type="username" class="form-control firstName" id="floatingName"
-                                placeholder="User Name" />
-                            <label for=" floatingName" class="floatingName">Username</label>
-                        </div>
+                                <input type="username" class="form-control firstName" id="floatingName"
+                                    placeholder="User Name" />
+                                <label for=" floatingName" class="floatingName">Username</label>
+                            </div>
 
-                        <div class="form-floating" style="margin-bottom: 1rem; 
+                            <div class="form-floating" style="margin-bottom: 1rem; 
                                     justify-content: center;
                                     width: 100%;">
-                            <input type="password" class="form-control firstName" id="floatingName"
-                                placeholder="Password" />
-                            <label for="floatingName" class="floatingName">Password</label>
+                                <input type="password" class="form-control firstName" id="floatingName"
+                                    placeholder="Password" />
+                                <label for="floatingName" class="floatingName">Password</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="submitBtn" style="align-items: center;" id="signbutton">
+                        <div class="button-container">
+                            <button class="btn btn-dark btn-lg submitbtn" type="button"
+                                style="height: 4rem; margin-top: 2.8rem; border-radius: 15px;">
+                                <a href="index.html">Sign in</a>
+                            </button>
                         </div>
                     </div>
 
+
                 </div>
-
-                <div class="submitBtn" style="align-items: center;" id="signbutton">
-                    <div class="button-container">
-                        <button class="btn btn-dark btn-lg submitbtn" type="button"
-                            style="height: 4rem; margin-top: 2.8rem; border-radius: 15px;">
-                            <a href="index.html">Sign in</a>
-                        </button>
-                    </div>
-                </div>
-
-
             </div>
         </div>
-    </div>
 
 
-    <div class="forMobileView">
-        <div class="container" id="signup-wrapper">
-            <div class="section1">
-                <h1 class="titleHead title-item">Create your account</h1>
-            </div>
-            <!-- ?Name -->
-            <div class="formsectn1">
-                <h4 class="formcontTitle">Name:</h4>
-                <div class="forName">
-                    <div class="form-floating" id="firsName">
-                        <input type="text" class="form-control firstName" id="floatingName" placeholder="First Name"
-                            style="text-transform: capitalize;" />
-                        <label for="floatingName" class="floatingName">First</label>
+        <div class="forMobileView">
+            <div class="container" id="signup-wrapper">
+                <div class="section1">
+                    <h1 class="titleHead title-item">Create your account</h1>
+                </div>
+                <!-- ?Name -->
+                <div class="formsectn1">
+                    <h4 class="formcontTitle">Name:</h4>
+                    <div class="forName">
+                        <div class="form-floating" id="firsName">
+                            <input type="text" class="form-control firstName" id="floatingName" placeholder="First Name"
+                                style="text-transform: capitalize;" />
+                            <label for="floatingName" class="floatingName">First</label>
+                        </div>
+                        <div class="form-floating" id="lastName">
+                            <input type="text" class="form-control lastName" id="floatingName" placeholder="Last Name"
+                                style="text-transform: capitalize;" />
+                            <label for="floatingName" class="floatingName ">Last</label>
+                        </div>
                     </div>
-                    <div class="form-floating" id="lastName">
-                        <input type="text" class="form-control lastName" id="floatingName" placeholder="Last Name"
-                            style="text-transform: capitalize;" />
-                        <label for="floatingName" class="floatingName ">Last</label>
-                    </div>
                 </div>
-            </div>
-            <!-- ?CONTACT NUMBER -->
-            <div class="formsectn1" id="signupCon-section">
-                <h4 class="formcontTitle">Contact Number:</h4>
-                <div class="form-floating">
-                    <input type="number" class="form-control" id="floatingName" placeholder="Time" />
-                    <label for="floatingName" class="floatingName">09*********</label>
-                </div>
-            </div>
-            <!-- ?EMAIL -->
-            <div class="formsectn1" id="signupEmail">
-                <h4 class="formcontTitle">Email Address:</h4>
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="floatingName" placeholder="Time" />
-                    <label for="floatingName" class="floatingName">**********@example.com</label>
-                </div>
-            </div>
-
-            <div class="submitBtn">
-                <div class="button-container">
-                    <button class="btn btn-dark btn-lg submitbtn" type="button">
-                        <a href="index.html">Submit</a>
-                    </button>
-                </div>
-            </div>
-
-            <!-- ? SIGN IN INSTEAD-->
-            <div class="login-options" style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
-
-                <div class="signin-form" style="margin-right: -4rem;">
-                    <h4 class="formcontTitle">Username and password to sign in:</h4>
+                <!-- ?CONTACT NUMBER -->
+                <div class="formsectn1" id="signupCon-section">
+                    <h4 class="formcontTitle">Contact Number:</h4>
                     <div class="form-floating">
-                        <div class="form-floating" style="margin-block: 1rem; 
-                        justify-content: center;
-                        width: 100%;">
-                            <input type="username" class="form-control firstName" id="floatingName"
-                                placeholder="User Name" />
-                            <label for=" floatingName" class="floatingName">Username</label>
-                        </div>
-
-                        <div class="form-floating" style="margin-bottom: 1rem; 
-                                            justify-content: center;
-                                            width: 100%;">
-                            <input type="password" class="form-control firstName" id="floatingName"
-                                placeholder="Password" />
-                            <label for="floatingName" class="floatingName">Password</label>
-                        </div>
+                        <input type="number" class="form-control" id="floatingName" placeholder="Time" />
+                        <label for="floatingName" class="floatingName">09*********</label>
                     </div>
-
+                </div>
+                <!-- ?EMAIL -->
+                <div class="formsectn1" id="signupEmail">
+                    <h4 class="formcontTitle">Email Address:</h4>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingName" placeholder="Time" />
+                        <label for="floatingName" class="floatingName">**********@example.com</label>
+                    </div>
                 </div>
 
-                <div class="submitBtn" style="align-items: center;" id="signbutton">
+                <div class="submitBtn">
                     <div class="button-container">
-                        <button class="btn btn-dark btn-lg submitbtn" type="button"
-                            style="height: 4rem; margin-top: 2.8rem; border-radius: 15px;">
-                            <a href="index.html">Sign in</a>
+                        <button class="btn btn-dark btn-lg submitbtn" type="button">
+                            <a href="index.html">Submit</a>
                         </button>
                     </div>
                 </div>
 
+                <!-- ? SIGN IN INSTEAD-->
+                <div class="login-options" style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
 
+                    <div class="signin-form" style="margin-right: -4rem;">
+                        <h4 class="formcontTitle">Username and password to sign in:</h4>
+                        <div class="form-floating">
+                            <div class="form-floating" style="margin-block: 1rem; 
+                        justify-content: center;
+                        width: 100%;">
+                                <input type="username" class="form-control firstName" id="floatingName"
+                                    placeholder="User Name" />
+                                <label for=" floatingName" class="floatingName">Username</label>
+                            </div>
+
+                            <div class="form-floating" style="margin-bottom: 1rem; 
+                                            justify-content: center;
+                                            width: 100%;">
+                                <input type="password" class="form-control firstName" id="floatingName"
+                                    placeholder="Password" />
+                                <label for="floatingName" class="floatingName">Password</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="submitBtn" style="align-items: center;" id="signbutton">
+                        <div class="button-container">
+                            <button class="btn btn-dark btn-lg submitbtn" type="button"
+                                style="height: 4rem; margin-top: 2.8rem; border-radius: 15px;">
+                                <a href="index.html">Sign in</a>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </div>

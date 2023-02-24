@@ -19,3 +19,130 @@ body {
     padding: 0px;
     font-family: 'Play', sans-serif;
 }
+
+.titleHead {
+    color: var(--light);
+    text-shadow: .75px .75px var(--dark900);
+    text-align: center;
+    margin: 6rem;
+
+}
+
+.titleHead h1 {
+    font-size: 4rem;
+}
+
+.button-container {
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+    transition: 400ms;
+}
+
+.button-container:hover {
+    transform: scale(1.1);
+}
+
+.chat-form-container {
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark800);
+
+}
+
+.mobilenumber-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.mobilenumber-container svg {
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+    transition: 400ms;
+    color: var(--dark400);
+}
+
+.mobilenumber-container svg:hover {
+    transform: scale(1.2);
+}
+
+.mobilenumber-container h5 {
+    color: var(--light);
+}
+
+.facebook-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook-container svg {
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+    transition: 400ms;
+    color: var(--dark400);
+}
+
+.facebook-container svg:hover {
+    transform: scale(1.2);
+}
+
+.facebook-container a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.submitBtn {
+    text-align: center;
+}
+
+.submitBtn a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+@media (max-width: 700px) {
+    .titleHead h1 {
+        font-size: 3rem;
+    }
+
+    .mobilenumber-container svg {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .facebook-container svg {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .titleHead {
+        margin: 3rem;
+    }
+
+    .chat-form-container {
+        height: 25rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .mobilenumber-container {
+        margin: 0.95rem;
+    }
+
+    .facebook-container {
+        margin: 0.95rem;
+    }
+
+    .titleHead h1 {
+        font-size: 2rem;
+    }
+
+    .titleHead {
+        margin: 2rem;
+    }
+}

@@ -198,6 +198,12 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+    transition: 400ms;
+}
+
+.submitBtn:hover {
+    transform: scale(1.1);
 }
 
 .button-container {
@@ -209,6 +215,7 @@ body {
     color: white;
     margin: 0.255rem;
     padding: 0.255rem;
+
 }
 
 .showMore {
