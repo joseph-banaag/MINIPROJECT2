@@ -23,14 +23,6 @@ body {
     box-sizing: border-box;
 }
 
-/* ! START OF THE NAVBAR SECTION */
-
-
-/* ! END OF THE NAVBAR SECTION */
-
-
-
-
 
 
 .navBar {
@@ -126,11 +118,6 @@ body {
 
 }
 
-/* .heroImg {
-    height: 1050px;
-    width: 100%;
-    backdrop-filter: blur(180px);
-} */
 
 .callToAct {
     max-height: 700px;
@@ -426,8 +413,6 @@ body {
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
 }
-
-
 
 
 /* !@media resources */
