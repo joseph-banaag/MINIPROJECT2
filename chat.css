@@ -1,0 +1,21 @@
+body {
+    background-image: linear-gradient(#2B2D42, #555881, #8d99ae, #edf2f4);
+    min-height: 100vh;
+}
+
+:root {
+    --dark800: #2B2D42;
+    --dark900: black;
+    --dark600: #555881;
+    --dark400: #8d99ae;
+    --light: #edf2f4;
+    --contrast: #f12229;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Play', sans-serif;
+}

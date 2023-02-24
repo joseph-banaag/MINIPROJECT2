@@ -1,0 +1,80 @@
+body {
+    background-image: linear-gradient(#2B2D42, #555881, #8d99ae, #edf2f4);
+    min-height: 100vh;
+}
+
+:root {
+    --dark800: #2B2D42;
+    --dark900: black;
+    --dark600: #555881;
+    --dark400: #8d99ae;
+    --light: #edf2f4;
+    --contrast: #f12229;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Play', sans-serif;
+}
+
+.training-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trainingerwrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#heading1 {
+    width: 100%;
+    text-align: center;
+    margin-block: 5rem;
+    font-size: 4rem;
+    color: var(--light);
+    text-shadow: .75px .75px var(--dark900);
+}
+
+.training-day h3 {
+    font-size: 2.5rem;
+    color: black;
+    text-shadow: 0.95px 0.95px grey;
+}
+
+.training-hour {
+    align-items: center;
+    text-align: center;
+    margin-block: 1rem;
+
+}
+
+.hour {
+    margin-block: 1rem;
+}
+
+.hour a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.submitButton {
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.submitButton a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.btnC{
+    width: 8rem;
+}
