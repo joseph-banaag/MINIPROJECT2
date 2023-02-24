@@ -110,6 +110,27 @@ body {
 
 }
 
+.address-container {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.city-zipcode-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.city {
+    width: 19.5rem;
+}
+
+.zipcode {
+    width: 19.5rem;
+}
+
 
 
 /* ! end of appointment form */
@@ -202,7 +223,19 @@ body {
 
 
 
-  
+    .city-zipcode-container {
+        display: inline;
+        margin: auto;
+        justify-content: center;
+        gap: 1rem;
+    }
 
+    #city {
+        margin-bottom: .5rem;
+    }
+
+    #zipcode {
+        margin-top: .75rem;
+    }
 
 }

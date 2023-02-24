@@ -82,50 +82,41 @@
 
             <!-- ?ADDRESS -->
 
+            <div class="address-container">
+                <h4 class="formcontTitle">Address:</h4>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" placeholder="Street address"
+                        style="text-transform: capitalize;" />
+                    <label for="floatingName" class="floatingName">Street address</label>
+                </div>
+            </div>
 
+            <div class="address-container">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" placeholder="Street address"
+                        style="text-transform: capitalize;" />
+                    <label for="floatingName" class="floatingName">Address line 2</label>
+                </div>
+            </div>
 
-
-
-            <!-- ! THIS PART IS NOT WORKING  -->
-            <!-- ! I am create a new one please hold -->
-
-            <div class="container ">
-
-
-                <div class="formsectn1" id="addressSection">
-                    <h4 class="formcontTitle">Address:</h4>
-
-                    <div class="form-floating" id="street1">
-                        <input type="text" class="form-control" id="floatingName" placeholder="Time"
+            <div class="address-container">
+                <div class="city-zipcode-container">
+                    <div class="form-floating" id="city">
+                        <input type="text" class="form-control city" id="floatingName" placeholder="City"
                             style="text-transform: capitalize;" />
-                        <label for="floatingName" class="floatingName">Street address</label>
+                        <label for="floatingName" class="floatingName">City</label>
                     </div>
 
-                    <div class="form-floating" id="street2">
-                        <input type="text" class="form-control" id="floatingName" placeholder="Time"
-                            style="text-transform: capitalize;" />
-                        <label for="floatingName" class="floatingName">Address line 2</label>
-                    </div>
-
-
-
-                    <div class="forName">
-                        <div class="form-floating" id="zipcode">
-                            <input type="number" class="form-control lastName" id="floatingName" placeholder="Last Name"
-                                style="text-transform: capitalize;" />
-                            <label for="floatingName" class="floatingName ">ZIP code</label>
-                        </div>
-
-                        <div class="form-floating" id="city">
-                            <input type="text" class="form-control firstName" id="floatingName" placeholder="City"
-                                style="text-transform: capitalize;" />
-                            <label for="floatingName" class="floatingName">City</label>
-                        </div>
-
+                    <div class="form-floating" id="zipcode">
+                        <input type="number" class="form-control zipcode" id="floatingName"
+                            placeholder="Street address" />
+                        <label for="floatingName" class="floatingName">ZIP Code</label>
                     </div>
                 </div>
-
             </div>
+
+
+
 
             <div class="submitButton mt-3">
                 <div class="bton-container">
@@ -135,12 +126,9 @@
                 </div>
             </div>
 
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
