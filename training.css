@@ -21,19 +21,29 @@ body {
     font-family: 'Play', sans-serif;
 }
 
-.training-container {
+.heading-container {
+    width: 85vw;
     margin: auto;
+}
+
+.training-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: fit-content;
     height: 100%;
+    width: 100vw;
+
 
 }
 
 .trainingerwrapper {
     display: flex;
     justify-content: space-evenly;
+    width: fit-content;
+    margin: auto;
+    padding: 2rem;
+
 }
 
 
@@ -51,6 +61,8 @@ body {
     font-size: 2.5rem;
     color: black;
     text-shadow: 0.95px 0.95px grey;
+    width: 13rem;
+    text-align: center;
 
 }
 
@@ -100,12 +112,39 @@ body {
     transform: scale(1.1);
 }
 
-@media (max-width: 1200px){
-    .training-day{
-        border: 3px solid red;
+.first-row-days-ofD-week {
+    display: flex;
+    gap: 2.5rem;
+    margin-right: 2rem;
+}
+
+.second-row-days-ofD-week {
+    display: flex;
+    gap: 2.5rem;
+}
+
+@media (max-width: 900px) {
+
+
+    .trainingerwrapper {
+        width: 100%;
     }
 
-    .trainingerwrapper{
-        width: 100%;
+    .first-row-days-ofD-week {
+        display: flex;
+        margin-bottom: 3rem;
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .second-row-days-ofD-week {
+        display: flex;
+        margin-left: -5rem;
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .trainingerwrapper {
+        display: block;
     }
 }
