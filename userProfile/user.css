@@ -1,0 +1,198 @@
+body {
+    background-image: linear-gradient(#2B2D42, #555881, #2B2D42);
+    min-height: 100vh;
+}
+
+:root {
+    --dark800: #2B2D42;
+    --dark900: black;
+    --dark600: #555881;
+    --dark400: #8d99ae;
+    --light: #edf2f4;
+    --contrast: #f12229;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Play', sans-serif;
+    color: white;
+}
+
+
+.user-profile {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 9999px;
+    border: 1px solid var(--light);
+    margin-right: .5rem;
+    margin-left: .5rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: .5rem;
+
+}
+
+.topbar-userprofile {
+    /* border: 3px solid red; */
+    padding-right: 8rem;
+}
+
+.topbar-userprofile span {
+    /* margin-right: rem; */
+    /* border: 3px solid red; */
+    justify-content: center;
+    margin-top: 1.75rem;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+}
+
+.dropdown {
+    list-style: none;
+    margin-top: 1.75rem;
+
+    /* border: 3px solid red; */
+}
+
+.dropdown-menu {
+    margin-top: 2rem;
+    border: 3px solid var(--contrast);
+    background-color: #2B2D42;
+}
+
+.line-break {
+    border: 1px solid;
+    width: 85%;
+    margin: auto;
+}
+
+.left-panel-section {
+    height: 90vh;
+    width: 15vw;
+    /* border: 3px solid red; */
+    border-radius: 20px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.left-panel-items {
+    width: 15vw;
+    height: 15vh;
+    border-radius: 20px;
+    /* border: 3px solid red; */
+}
+
+.left-panel-items img {
+    width: 9rem;
+    height: 9rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#settings,
+#bmi,
+#program,
+#progress,
+#chatwithCoach,
+#gymlogo {
+    font-size: 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+    transition: 400ms;
+}
+
+
+#settings svg,
+#bmi svg,
+#program svg,
+#progress svg,
+#chatwithCoach svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: .5rem;
+}
+
+
+#settings:hover,
+#bmi:hover,
+#program:hover,
+#progress:hover,
+#chatwithCoach:hover,
+#gymlogo:hover {
+    transform: scale(1.2);
+}
+
+.center-panel-section {
+    height: 90vh;
+    width: 80vw;
+    border: 3px solid var(--light);
+    border-radius: 20px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    filter: drop-shadow(0px 2px 2px rgb(233, 228, 228));
+}
+
+.panel-section-wrapper {
+    display: flex;
+}
+
+
+@media (max-width: 1200px) {
+
+    #settings,
+    #bmi,
+    #program,
+    #progress,
+    #chatwithCoach,
+    #gymlogo {
+        font-size: .75rem;
+    }
+
+    .left-panel-items img {
+        width: 7rem;
+        height: 7rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 850px) {
+
+    #settings,
+    #bmi,
+    #program,
+    #progress,
+    #chatwithCoach,
+    #gymlogo {
+        font-size: .5rem;
+    }
+
+
+    #settings svg,
+    #bmi svg,
+    #program svg,
+    #progress svg,
+    #chatwithCoach svg {
+        height: 2rem;
+        width: 2rem;
+        margin-top: .25rem;
+    }
+
+    .left-panel-items img {
+        width: 5rem;
+        height: 5rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+}

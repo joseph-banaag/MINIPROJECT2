@@ -65,12 +65,50 @@ body {
 
 }
 
-.navoptions:hover {
+.navoptions:hover,
+.topbar-userprofile:hover {
     display: flex;
     color: var(--light);
     transform: scale(1.2);
 }
 
+.user-profile {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 9999px;
+    border: 1px solid var(--light);
+    margin-right: .5rem;
+    margin-left: .5rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: .5rem;
+
+}
+
+.topbar-userprofile {
+    /* border: 3px solid red; */
+    padding-right: 8rem;
+    margin-bottom: 1rem;
+    transition: 400ms;
+}
+
+.topbar-userprofile span {
+    font-size: large;
+    /* margin-right: rem; */
+    /* border: 3px solid red; */
+    justify-content: center;
+    /* margin-top: 1rem; */
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+    color: var(--light);
+
+}
+
+.dropdown {
+    list-style: none;
+    margin-top: 1.75rem;
+
+    /* border: 3px solid red; */
+}
 
 .showEquipment {
     max-height: 1050px;
