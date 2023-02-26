@@ -26,7 +26,7 @@ body {
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 9999px;
-    border: 1px solid var(--light);
+    border: 2.5px solid var(--contrast);
     margin-right: .5rem;
     margin-left: .5rem;
     margin-top: 1rem;
@@ -135,13 +135,124 @@ body {
     border-radius: 20px;
     margin-top: 1rem;
     margin-left: 2rem;
-    filter: drop-shadow(0px 2px 2px rgb(233, 228, 228));
+    /* filter: drop-shadow(0px 2px 2px rgb(233, 228, 228)); */
 }
 
 .panel-section-wrapper {
     display: flex;
 }
 
+
+.progress-wrapper {
+    /* border: solid red 3px; */
+    display: flex;
+    height: 25rem;
+    text-align: center;
+    /* margin-top: 2rem; */
+    /* align-items: center; */
+}
+
+.progress-wrapper h6 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    border: 3px solid var(--contrast);
+    border-radius: 30px;
+    width: 15rem;
+    margin: auto;
+    background-color: var(--contrast);
+}
+
+#started-BMI-progress {
+    /* border: solid red 3px; */
+    margin-top: 1.5rem;
+
+
+}
+
+#current-BMI-progress {
+    /* border: solid red 3px; */
+    margin-top: 1.5rem;
+
+
+}
+
+#goal-BMI-progress {
+    /* border: solid red 3px; */
+    margin-top: 1.5rem;
+
+
+}
+
+.progress {
+    background-color: #2B2D42;
+}
+
+.progress-bar {
+    color: black;
+}
+
+.progress {
+    width: 100%;
+    margin: auto;
+    border: 3px solid red;
+}
+
+.progress-container-wrapper {
+    width: 95%;
+    display: flex;
+    margin: auto;
+}
+
+.goal-progress-bar svg {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 5rem;
+}
+
+.physic-illustration {
+    /* border: solid 3px red; */
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+.fat-containter img {
+    height: 4rem;
+    width: 5rem;
+}
+
+.fit-containter img {
+    height: 4rem;
+    width: 5rem;
+    margin-bottom: 2rem;
+}
+
+.initial-bmi {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid red; */
+    justify-content: space-evenly;
+    height: 20rem;
+    margin-top: 1rem;
+}
+
+.initial-weight,
+.bmi-score {
+    border: 3px solid var(--light);
+    width: 4rem;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.bmi-result {
+    border: 3px solid var(--light);
+    width: 6.5rem;
+    margin: auto;
+    border-radius: 30px;
+}
 
 @media (max-width: 1200px) {
 
