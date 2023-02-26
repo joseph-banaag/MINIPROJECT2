@@ -213,7 +213,7 @@ body {
     /* border: solid 3px red; */
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
     height: 4rem;
     margin-top: 2rem;
     margin-left: 4rem;
@@ -273,7 +273,26 @@ body {
         justify-content: center;
     }
 
+    .physic-illustration {
+        width: 80%;
+    }
 
+
+}
+
+@media (max-width: 980px) {
+    .physic-illustration {
+        width: 75%;
+    }
+
+    .progress-wrapper {
+        display: block;
+        direction: column-reverse;
+    }
+
+    .progress-bar-container{
+        display: block;
+    }
 }
 
 @media (max-width: 850px) {
