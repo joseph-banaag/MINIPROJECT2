@@ -51,9 +51,11 @@ body {
     display: flex;
     height: 15rem;
     justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 2rem;
     transition: 100ms;
+    padding-right: 2rem;
 }
 
 .navoptions {
@@ -62,9 +64,11 @@ body {
     text-decoration: none;
     transition: width 400ms, height 400ms, transform 400ms;
     text-shadow: .75px .75px var(--dark900);
-
 }
-
+.dropdown-menu{
+    border: solid 3px var(--contrast);
+    z-index: 99999;
+}
 .navoptions:hover,
 .topbar-userprofile:hover {
     display: flex;
@@ -87,7 +91,7 @@ body {
 
 .topbar-userprofile {
     /* border: 3px solid red; */
-    padding-right: 8rem;
+    /* padding-right: 8rem; */
     margin-bottom: 1rem;
     transition: 400ms;
 }

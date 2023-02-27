@@ -206,8 +206,11 @@ body {
 .goal-progress-bar svg {
     width: 2rem;
     height: 2rem;
-    margin-right: 5rem;
+    margin-right: 4rem;
+    
 }
+
+
 
 .physic-illustration {
     /* border: solid 3px red; */
