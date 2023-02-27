@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="user.css">
     <link rel="icon" href="img/OppaFitnessGym.png" type="image/icon type" />
-    <script src="appointment.js" defer></script>
 
     <!-- ?Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,32 +23,36 @@
 
 <body style="width: 100%;">
     <div class="topbar-userprofile d-flex flex-row-reverse">
-        <img src="../img/profile.png" alt="profile" class="user-profile">
+        <div class="profileContainer d-flex mt-5">
 
-        <li class="dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span>Joseph B.</span>
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span>Joseph B.</span>
 
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Progress report</a></li>
-                <li><a class="dropdown-item" href="#">BMI Calculator</a></li>
-                <li><a class="dropdown-item" href="#">Chat with Coach</a></li>
-                <li><a class="dropdown-item" href="#">Feedback</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Progress report</a></li>
+                    <li><a class="dropdown-item" href="#">BMI Calculator</a></li>
+                    <li><a class="dropdown-item" href="#">Chat with Coach</a></li>
+                    <li><a class="dropdown-item" href="#">Feedback</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
 
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
 
-                <li><a class="dropdown-item" href="#">Switch account</a></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-        </li>
+                    <li><a class="dropdown-item" href="#">Switch account</a></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </li>
+
+            <img src="../img/profile.png" alt="profile" class="user-profile">
 
 
+        </div>
     </div>
 
 
@@ -57,155 +60,267 @@
     <!-- <div class="line-break"></div> -->
     <div class="panel-section-wrapper">
         <div class="left-panel-section">
-            <div class="left-panel-items" id="settings">SETTINGS
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
-                    <path
-                        d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
-                </svg>
+            <div class="leftPanelItems" id="settings">PROFILE<button id="defaultOpenpanel"
+                    onclick="openPanel(even, 'centerPanelProfile')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg></button>
+            </div>
+            <div class="leftPanelItems" id="settings">SETTINGS<button onclick="openPanel(even, 'centerPanelSettings')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-gear" viewBox="0 0 16 16">
+                        <path
+                            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                        <path
+                            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                    </svg></button>
             </div>
 
-            <div class="left-panel-items" id="bmi">BMI CALCULATOR
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-calculator" viewBox="0 0 16 16">
-                    <path
-                        d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
-                    <path
-                        d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z" />
-                </svg>
+            <div class="leftPanelItems" id="bmi">BMI CALCULATOR<button onclick="openPanel(even, 'centerPanelbmiCal')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-calculator" viewBox="0 0 16 16">
+                        <path
+                            d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                        <path
+                            d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z" />
+                    </svg></button>
             </div>
 
-            <div class="left-panel-items" id="program">TRAINING PROGRAMS
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-list-task" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
-                    <path
-                        d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
-                    <path fill-rule="evenodd"
-                        d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
-                </svg>
+            <div class="leftPanelItems" id="program">TRAINING PROGRAMS<button
+                    onclick="openPanel(even, 'centerPanelTraining')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list-task" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                        <path
+                            d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                        <path fill-rule="evenodd"
+                            d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                    </svg></button>
             </div>
 
-            <div class="left-panel-items" id="progress">PROGRESS REPORT
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-clipboard2-data" viewBox="0 0 16 16">
-                    <path
-                        d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5h3Z" />
-                    <path
-                        d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-12Z" />
-                    <path
-                        d="M10 7a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7Zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm4-3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1Z" />
-                </svg>
+            <div class="leftPanelItems" id="progress">PROGRESS REPORT<button
+                    onclick="openPanel(even, 'centerPanelProgRep')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard2-data" viewBox="0 0 16 16">
+                        <path
+                            d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5h3Z" />
+                        <path
+                            d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-12Z" />
+                        <path
+                            d="M10 7a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7Zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm4-3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1Z" />
+                    </svg></button>
             </div>
 
-            <div class="left-panel-items" id="chatwithCoach">CHAT WITH COACH
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-chat-dots" viewBox="0 0 16 16">
-                    <path
-                        d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                    <path
-                        d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
-                </svg>
+            <div class="leftPanelItems" id="chatwithCoach">CHAT WITH COACH<button
+                    onclick="openPanel(even, 'centerPanelChatwCoach')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chat-dots" viewBox="0 0 16 16">
+                        <path
+                            d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        <path
+                            d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                    </svg></button>
             </div>
 
-            <div class="left-panel-items" id="gymlogo"><a href="../index.html"><img src="../img/OppaFitnessGym.png"
-                        alt="logo"></a></div>
+            <div class="leftPanelItems" id="gymlogo"><button onclick="openPanel(even, 'centerPanelHome')"><a
+                        href="../index.html"><img src="../img/OppaFitnessGym.png" alt="logo"></a></button></div>
         </div>
 
         <div class="center-panel-section">
-            <div class="progress-wrapper">
-                <div class="col-4" id="started-BMI-progress">
-                    <h6>You've started here!</h6>
-                    <div class="initial-bmi">
-                        <span class="weight-report">Height:</span>
-                        <span class="initial-weight">173 cm</span>
-                        <span class="weight-report">Weight:</span>
-                        <span class="initial-weight">81 Kg</span>
-                        <span class="bmi-container">BMI:</span>
-                        <span class="bmi-score">27.1</span>
-                        <span class="bmi-category">BMI Category:</span>
-                        <span class="bmi-result">Overweight</span>
+            <div class="panelContent" id="centerPanelProfile">
+                <div class="progress-wrapper">
+                    <div class="col-4" id="started-BMI-progress">
+                        <h6 class="progressTitle">You've started here!</h6>
+                        <div class="initial-bmi">
+                            <span class="weight-report">Height:</span>
+                            <span class="initial-weight">173 cm</span>
+                            <span class="weight-report">Weight:</span>
+                            <span class="initial-weight">81 Kg</span>
+                            <span class="bmi-container">BMI:</span>
+                            <span class="bmi-score">27.1</span>
+                            <span class="bmi-category">BMI Category:</span>
+                            <span class="bmi-result">Overweight</span>
+                        </div>
                     </div>
+
+                    <div class="col-4" id="current-BMI-progress">
+                        <h6 class="progressTitle">Your current BMI</h6>
+                        <div class="initial-bmi">
+                            <span class="weight-report">Height:</span>
+                            <span class="initial-weight">173 cm</span>
+
+                            <span class="weight-report">Weight:</span>
+                            <span class="initial-weight">75 Kg</span>
+                            <span class="bmi-container">BMI:</span>
+                            <span class="bmi-score">25.1</span>
+                            <span class="bmi-category">BMI Category:</span>
+                            <span class="bmi-result">Overweight</span>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-4" id="goal-BMI-progress">
+                        <h6 class="progressTitle">Your Goal</h6>
+                        <div class="initial-bmi">
+                            <span class="weight-report">Height:</span>
+                            <span class="initial-weight">173 cm</span>
+                            <span class="weight-report">Weight:</span>
+                            <span class="initial-weight">70 Kg</span>
+                            <span class="bmi-container">BMI:</span>
+                            <span class="bmi-score">23.4</span>
+                            <span class="bmi-category">BMI Category:</span>
+                            <span class="bmi-result" style="width: 8.5rem;">Normal Weight</span>
+
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="col-4" id="current-BMI-progress">
-                    <h6>Your current BMI</h6>
-                    <div class="initial-bmi">
-                        <span class="weight-report">Height:</span>
-                        <span class="initial-weight">173 cm</span>
+                <div class="progress-bar-container">
+                    <div class="physic-illustration">
 
-                        <span class="weight-report">Weight:</span>
-                        <span class="initial-weight">75 Kg</span>
-                        <span class="bmi-container">BMI:</span>
-                        <span class="bmi-score">25.1</span>
-                        <span class="bmi-category">BMI Category:</span>
-                        <span class="bmi-result">Overweight</span>
+                        <div class="fat-containter">
+                            <img src="../img/fatness.png" alt="">
+                        </div>
 
+                        <div class="fit-containter">
+                            <img src="../img/fitness.png" alt="">
+                        </div>
 
                     </div>
-                </div>
+                    <div class="progress-container-wrapper">
+                        <div class="progress">
+                            <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated"
+                                role="progressbar" aria-label="Animated striped example" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                        </div>
 
-                <div class="col-4" id="goal-BMI-progress">
-                    <h6>Your Goal</h6>
-                    <div class="initial-bmi">
-                        <span class="weight-report">Height:</span>
-                        <span class="initial-weight">173 cm</span>
-                        <span class="weight-report">Weight:</span>
-                        <span class="initial-weight">70 Kg</span>
-                        <span class="bmi-container">BMI:</span>
-                        <span class="bmi-score">23.4</span>
-                        <span class="bmi-category">BMI Category:</span>
-                        <span class="bmi-result" style="width: 8.5rem;">Normal Weight</span>
-
-
+                        <div class="goal-progress-bar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-flag-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
+                            </svg>
+                        </div>
                     </div>
-                </div>
 
+
+                </div>
             </div>
 
-            <div class="progress-bar-container">
-                <div class="physic-illustration">
-
-                    <div class="fat-containter">
-                        <img src="../img/fatness.png" alt="">
+            <!-- <div class="panelContent" id="centerPanelSettings">
+                <div class="progress-wrapper">
+                    <div class="col-4" id="started-BMI-progress">
+                        <h6>You've started here!</h6>
+                        <div class="initial-bmi">
+                            <span class="weight-report">Height:</span>
+                            <span class="initial-weight">173 cm</span>
+                            <span class="weight-report">Weight:</span>
+                            <span class="initial-weight">81 Kg</span>
+                            <span class="bmi-container">BMI:</span>
+                            <span class="bmi-score">27.1</span>
+                            <span class="bmi-category">BMI Category:</span>
+                            <span class="bmi-result">Overweight</span>
+                        </div>
                     </div>
-
-                    <div class="fit-containter">
-                        <img src="../img/fitness.png" alt="">
+            
+                    <div class="col-4" id="current-BMI-progress">
+                        <h6>Your current BMI</h6>
+                        <div class="initial-bmi">
+                            <span class="weight-report">Height:</span>
+                            <span class="initial-weight">173 cm</span>
+            
+                            <span class="weight-report">Weight:</span>
+                            <span class="initial-weight">75 Kg</span>
+                            <span class="bmi-container">BMI:</span>
+                            <span class="bmi-score">25.1</span>
+                            <span class="bmi-category">BMI Category:</span>
+                            <span class="bmi-result">Overweight</span>
+            
+            
+                        </div>
                     </div>
-
+            
+                    <div class="col-4" id="goal-BMI-progress">
+                        <h6>Your Goal</h6>
+                        <div class="initial-bmi">
+                            <span class="weight-report">Height:</span>
+                            <span class="initial-weight">173 cm</span>
+                            <span class="weight-report">Weight:</span>
+                            <span class="initial-weight">70 Kg</span>
+                            <span class="bmi-container">BMI:</span>
+                            <span class="bmi-score">23.4</span>
+                            <span class="bmi-category">BMI Category:</span>
+                            <span class="bmi-result" style="width: 8.5rem;">Normal Weight</span>
+            
+            
+                        </div>
+                    </div>
+            
                 </div>
-                <div class="progress-container-wrapper">
-                    <div class="progress">
-                        <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated"
-                            role="progressbar" aria-label="Animated striped example" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            
+                <div class="progress-bar-container">
+                    <div class="physic-illustration">
+            
+                        <div class="fat-containter">
+                            <img src="../img/fatness.png" alt="">
+                        </div>
+            
+                        <div class="fit-containter">
+                            <img src="../img/fitness.png" alt="">
+                        </div>
+            
                     </div>
-
-                    <div class="goal-progress-bar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-flag-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
-                        </svg>
+                    <div class="progress-container-wrapper">
+                        <div class="progress">
+                            <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 50%"></div>
+                        </div>
+            
+                        <div class="goal-progress-bar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-flag-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
+                            </svg>
+                        </div>
                     </div>
+            
+            
                 </div>
-
-
-            </div>
-
-
+            </div> -->
         </div>
     </div>
+<!-- Bottom banner -->
+<div class="bottombar text-center">
+    <div class="bottombar__content">
+        <div class="bottombar__text">
+            <h5><strong class="cong">CONGRATULATIONS!</strong>  You are half way there. Keep it up warrior! </h5>
+            
+        </div>
+        <button class="bottombar__close" type="button">&times;</button>
+    </div>
+</div>
 
-
+<script>
+    document.addEventListener("click", function (e) {
+        if (e.target.className.indexOf("bottombar__close") !== -1) {
+            document.body.removeChild(e.target.parentElement.parentElement);
+        }
+    });
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 </body>
+<script src="user.js"></script>
 
 </html>

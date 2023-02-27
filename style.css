@@ -342,10 +342,12 @@ body {
 
 .bottombar__content {
     position: relative;
-    max-width: 500px;
+    max-width: 800px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    /* border: 4px solid black; */
+    align-items: center;
 
 }
 
@@ -362,6 +364,10 @@ body {
     /* background: none; */
     background-color: var(--dark800);
 
+}
+
+.bottombar__text{
+    margin: auto;
 }
 
 /* !banner */
