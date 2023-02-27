@@ -366,7 +366,7 @@ body {
 
 }
 
-.bottombar__text{
+.bottombar__text {
     margin: auto;
 }
 
@@ -523,303 +523,322 @@ body {
         font-size: 1.75rem;
     }
 
+}
 
+@media (max-width: 950px) {
+    #chat-form-cta {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
+    }
 
-    @media (max-width: 950px) {
-        #chat-form-cta {
-            display: block;
-            width: fit-content;
-            margin: auto;
-            justify-content: center;
-        }
+    #chat-header {
+        width: 100%;
+    }
 
-        #chat-header {
-            width: 100%;
-        }
+    .chat-list-container {
+        padding-right: 4rem;
+    }
 
-        .chat-list-container {
-            padding-right: 4rem;
-        }
+    .chat-question-wrapper {
+        display: flex;
+        justify-content: start;
+    }
 
-        .chat-question-wrapper {
-            display: flex;
-            justify-content: start;
-        }
+    #chat-right {
+        margin-left: 10rem;
+    }
 
-        #chat-right {
-            margin-left: 10rem;
-        }
+    .showMore {
+        min-height: 18rem;
+    }
 
-        .showMore {
-            min-height: 18rem;
-        }
+    .showEquipment {
+        background: black;
+        backdrop-filter: blur(180px);
+        background-image: url(./img/throughfitness.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        scroll-behavior: smooth;
+        background-position: center;
 
-        .showEquipment {
-            background: black;
-            backdrop-filter: blur(180px);
-            background-image: url(./img/throughfitness.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            scroll-behavior: smooth;
-            background-position: center;
-
-
-        }
 
     }
 
-    @media (max-width: 700px) {
+}
 
-        #chat-form-cta {
-            display: block;
-            width: fit-content;
-            margin: auto;
-            justify-content: center;
-        }
+@media (max-width: 700px) {
 
-        #chat-header {
-            width: 100%;
-        }
-
-        .chat-list-container {
-            padding-right: 4rem;
-        }
-
-        .chat-question-wrapper {
-            display: flex;
-            justify-content: start;
-        }
-
-        #chat-right {
-            margin-left: 5rem;
-        }
-
-        .showMore {
-            min-height: 15rem;
-        }
-
-        #xtraDiv {
-            color: black;
-            text-shadow: 1px 1px grey;
-            font-size: 1.5rem;
-        }
-
-        .MainFoot {
-            width: 100%;
-            display: block;
-            justify-content: center;
-            justify-content: space-around;
-            margin: 0 auto;
-            text-align: center;
-            align-content: center;
-            border: 3px solid red;
-            align-items: center;
-            padding-bottom: 4rem;
-        }
-
-        .footerLogo {
-            margin: auto;
-            margin-bottom: 3rem;
-        }
-
-        .footerRight {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 2rem;
-            margin: auto;
-
-        }
-
-        .footerLeft {
-            width: 100%;
-        }
-
-        .footerLink-container {
-            display: flex;
-            width: auto;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            text-align: center;
-
-        }
-
-        .footer-right-items {
-            /* margin-bottom: 1rem; */
-            align-items: center;
-        }
-
-        .vLiner {
-            display: none;
-        }
-
-        .rowImg1 {
-            border-radius: 10px;
-        }
+    #chat-form-cta {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
     }
 
-    @media (max-width: 600px) {
-
-
-        .heroSection {
-            width: 100%;
-        }
-
-        .heroArea {
-            height: 20rem;
-            width: 20rem;
-        }
-
-        .oppaFitnessLogo {
-            margin-right: auto;
-            margin-left: auto;
-            left: 0;
-            right: 0;
-        }
-
-        .oppaLogo {
-            width: 100%;
-        }
-
-        .oppaName {
-            display: block;
-        }
-
-        .navBar {
-            height: 15rem;
-            margin: auto;
-            margin: 0;
-            padding: 0;
-        }
-
-
-
-        .chat-container-1 {
-            display: none;
-        }
-
-        #xtraDiv {
-            color: black;
-            text-shadow: 1px 1px grey;
-            font-size: 1rem;
-        }
-
-        .footer-items {
-            margin-bottom: 2rem;
-        }
+    #chat-header {
+        width: 100%;
     }
 
-    @media (max-width: 400px) {
-        #chat-form-cta {
-            display: block;
-            width: fit-content;
-            margin: auto;
-            justify-content: center;
-        }
-
-        #chat-header {
-            width: 100%;
-        }
-
-        .chat-list-container {
-            padding-right: 4rem;
-        }
-
-        .chat-question-wrapper {
-            display: flex;
-            justify-content: start;
-        }
-
-        #chat-right {
-            margin-right: 10px;
-            padding-right: 10px;
-
-        }
-
-        #floatingInput {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-        }
-
-        .mobile-menu a {
-            display: inline-block;
-            margin: 5px;
-
-        }
+    .chat-list-container {
+        padding-right: 4rem;
     }
 
-    @media (max-width: 300px) {
-        #chat-form-cta {
-            display: block;
-            width: fit-content;
-            margin: auto;
-            justify-content: center;
-        }
+    .chat-question-wrapper {
+        display: flex;
+        justify-content: start;
+    }
 
-        #chat-header {
-            width: 100%;
-        }
+    #chat-right {
+        margin-left: 5rem;
+    }
 
-        .chat-list-container {
-            padding-right: 4rem;
-        }
+    .showMore {
+        min-height: 15rem;
+    }
 
-        .chat-question-wrapper {
-            display: flex;
-            justify-content: start;
-        }
+    #xtraDiv {
+        color: black;
+        text-shadow: 1px 1px grey;
+        font-size: 1.5rem;
+    }
 
-        #chat-right {
-            margin-right: 10px;
-            padding-right: 10px;
+    .MainFoot {
+        width: 100%;
+        display: block;
+        justify-content: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        text-align: center;
+        align-content: center;
+        border: 3px solid red;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
 
-        }
+    .footerLogo {
+        margin: auto;
+        margin-bottom: 3rem;
+    }
 
-        #floatingInput {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-        }
+    .footerRight {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: auto;
 
-        .chat-question {
-            display: block;
-            color: black;
-        }
+    }
 
-        .heroArea {
-            width: 10rem;
-            height: 10rem;
-        }
+    .footerLeft {
+        width: 100%;
+    }
 
-        .hamburger-menu-container {
-            width: 100%;
-            margin: auto;
-        }
+    .footerLink-container {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
 
-        .mobile-menu {
-            width: 75%;
-            margin: auto 0;
+    }
 
-        }
+    .footer-right-items {
+        /* margin-bottom: 1rem; */
+        align-items: center;
+    }
 
-        .mobile-menu a {
-            display: inline-block;
-        }
+    .vLiner {
+        display: none;
+    }
 
-        .open .mobile-menu {
-            margin: auto;
-            display: inline;
-            justify-content: center;
-        }
+    .rowImg1 {
+        border-radius: 10px;
+    }
+}
 
-        .footerLogo {
-            margin-right: 5px;
-        }
+@media (max-width: 600px) {
+
+
+    .heroSection {
+        width: 100%;
+    }
+
+    .heroArea {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .oppaFitnessLogo {
+        margin-right: auto;
+        margin-left: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .oppaLogo {
+        width: 100%;
+    }
+
+    .oppaName {
+        display: block;
+    }
+
+    .navBar {
+        height: 15rem;
+        margin: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .chat-container-1 {
+        display: none;
+    }
+
+    #xtraDiv {
+        color: black;
+        text-shadow: 1px 1px grey;
+        font-size: 1rem;
+    }
+
+    .footer-items {
+        margin-bottom: 2rem;
+    }
+
+    .bottombar__close {
+        background: none;
+        border: none;
+        color: #f3efe0;
+        cursor: pointer;
+        font-size: 2em;
+
+    }
+
+
+    .bottombar__text h5 {
+        font-size: 1rem;
+        font-style: bold;
+        text-shadow: 1px 1px black;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #chat-form-cta {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #chat-header {
+        width: 100%;
+    }
+
+    .chat-list-container {
+        padding-right: 4rem;
+    }
+
+    .chat-question-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+
+    #chat-right {
+        margin-right: 10px;
+        padding-right: 10px;
+
+    }
+
+    #floatingInput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .mobile-menu a {
+        display: inline-block;
+        margin: 5px;
+
+    }
+
+
+}
+
+
+@media (max-width: 300px) {
+    #chat-form-cta {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #chat-header {
+        width: 100%;
+    }
+
+    .chat-list-container {
+        padding-right: 4rem;
+    }
+
+    .chat-question-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+
+    #chat-right {
+        margin-right: 10px;
+        padding-right: 10px;
+
+    }
+
+    #floatingInput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .chat-question {
+        display: block;
+        color: black;
+    }
+
+    .heroArea {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .hamburger-menu-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .mobile-menu {
+        width: 75%;
+        margin: auto 0;
+
+    }
+
+    .mobile-menu a {
+        display: inline-block;
+    }
+
+    .open .mobile-menu {
+        margin: auto;
+        display: inline;
+        justify-content: center;
+    }
+
+    .footerLogo {
+        margin-right: 5px;
     }
 }

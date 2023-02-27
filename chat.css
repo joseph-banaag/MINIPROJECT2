@@ -42,13 +42,14 @@ body {
 }
 
 .chat-form-container {
-    height: 35rem;
+    height: 45rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
     color: var(--dark800);
+    padding: 1px;
 
 }
 
@@ -57,12 +58,12 @@ body {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .mobilenumber-container svg {
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
-    transition: 400ms;
+    transition: 600ms;
     color: var(--dark400);
 }
 
@@ -76,14 +77,15 @@ body {
 
 .facebook-container {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2.5rem;
 }
 
 .facebook-container svg {
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
-    transition: 400ms;
+    transition: 600ms;
     color: var(--dark400);
 }
 
@@ -95,6 +97,33 @@ body {
     text-decoration: none;
     color: var(--light);
 }
+
+/* ! */
+.address-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-container svg {
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+    transition: 600ms;
+    color: var(--dark400);
+}
+
+
+.address-container,
+.address-container svg:hover {
+    transform: scale(1.2);
+}
+
+.address-container a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+/* ! */
 
 .submitBtn {
     text-align: center;
@@ -120,12 +149,59 @@ body {
         height: 4rem;
     }
 
+    .address-container svg {
+        width: 4rem;
+        height: 4rem;
+    }
+
     .titleHead {
         margin: 3rem;
+
     }
 
     .chat-form-container {
         height: 25rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .address-container h5,
+    .facebook-container h5,
+    .mobilenumber-container h5 {
+        font-size: 1rem;
+        padding: 1px;
+    }
+
+    .mobilenumber-container svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .facebook-container svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .address-container svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width:400px) {
+    .titleHead h1 {
+        font-size: 2rem;
+    }
+
+    .address-container h5,
+    .facebook-container h5,
+    .mobilenumber-container h5 {
+        font-size: 1rem;
+        padding: 1px;
     }
 }
 
@@ -144,5 +220,27 @@ body {
 
     .titleHead {
         margin: 2rem;
+    }
+
+    .mobilenumber-container svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .facebook-container svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .address-container svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .address-container h5,
+    .facebook-container h5,
+    .mobilenumber-container h5 {
+        font-size: 1rem;
+        padding: 1px;
     }
 }
