@@ -144,6 +144,19 @@ body {
     display: flex;
 }
 
+.profileContainer {
+    /* border: solid 3px red; */
+    transition: 700ms;
+
+
+}
+
+.profileContainer:hover {
+    transform: scale(1.2);
+    z-index: 9999;
+    position: relative;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+}
 
 .progress-wrapper {
     /* border: solid red 3px; */
@@ -191,8 +204,8 @@ body {
 }
 
 .progressTitle {
-    color: black;
-    text-shadow: .5px .75px var(--light);
+    color: rgb(0, 0, 0);
+    text-shadow: .5px .75px rgb(95, 95, 95);
 }
 
 .progress {
@@ -279,8 +292,21 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     padding: 10px;
     border: 4px solid var(--dark800);
+    opacity: 0;
     border-radius: 50px 50px 50px 50px;
+    animation: pop 1s 2s ease forwards;
+    transition: 2s;
 
+}
+
+@keyframes pop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .bottombar__content {
@@ -306,6 +332,10 @@ body {
 
 }
 
+.bottombar__text {
+    padding: 5%;
+}
+
 .bottombar__text h5 {
     color: black;
     text-shadow: .5px .75px var(--dark800);
@@ -314,6 +344,12 @@ body {
 .cong {
     color: black;
     font-size: 2rem;
+    text-decoration: underline;
+}
+
+.warrior {
+    font-size: 2rem;
+    color: var(--light);
 }
 
 #subsBtn:hover {
@@ -383,11 +419,18 @@ body {
         font-size: 1.2rem;
     }
 
+    .warrior {
+        font-size: 1.5rem;
+    }
+
     .left-panel-section {
         height: 70vh;
     }
 
- 
+    .progress-bar-container {
+        transform: rotate(90deg);
+        display: none;
+    }
 }
 
 @media (max-width: 980px) {

@@ -9,6 +9,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="maps.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/OppaFitnessGym.png" type="image/icon type" />
     <script src="appointment.js" defer></script>
 
@@ -56,6 +57,104 @@
 </style>
 
 <body style="width: 100%;">
+
+    <div class="navBar">
+        <div class="col-5 oppaLogo" id="brand">
+            <img src="img/OppaFitnessGym.png" alt="GymLogo" class="oppaFitnessLogo" />
+            <h1 class="oppaName">Oppa Fitness gym</h1>
+        </div>
+        <div class="col-7 oppaNavList">
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="./apptForm.html" class="navoptions">Schedule your appointment</a>
+                </button>
+            </div>
+    
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="training.html" class="navoptions">Training & Coaching</a>
+                </button>
+            </div>
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="sitemap.html" class="navoptions">Find our Location</a>
+                </button>
+            </div>
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="chat.html" class="navoptions">Chat with us</a>
+                </button>
+            </div>
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="./userProfile/user.html" class="navoptions">
+                        <div class="topbar-userprofile d-flex flex-row-reverse">
+                            <img src="./img/profile.png" alt="profile" class="user-profile">
+    
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span>Joseph B.</span>
+    
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="userProfile/user.html">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Progress report</a></li>
+                                    <li><a class="dropdown-item" href="#">BMI Calculator</a></li>
+                                    <li><a class="dropdown-item" href="#">Chat with Coach</a></li>
+                                    <li><a class="dropdown-item" href="#">Feedback</a></li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+    
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+    
+                                    <li><a class="dropdown-item" href="#">Switch account</a></li>
+                                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                </ul>
+                            </li>
+    
+    
+                        </div>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-dark">
+        <div class="container d-flex justify-content-center bg-dark">
+            <div class="hamburger-menu-container">
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+    
+                    <ul class="mobile-menu">
+                        <li><a href="./apptForm.html">Schedule your appointment</a></li>
+    
+                        <li><a href="training.html">Training & Coaching</a></li>
+    
+                        <li><a href="sitemap.html">Find our Location</a></li>
+    
+                        <li><a href="chat.html">Chat with us</a></li>
+                        <li><a href="./userProfile/user.html">Profile</a></li>
+    
+    
+                        <!-- <li><a class="dropdown-item" href="./userProfile/user.html">Profile</a></li> -->
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle("open");
+        }
+    </script>
+
     <div class="form-containter">
         <div class="section1 titleHead">
             <h1 class="title-item">Here is how you can get to our GYM.</h1>
@@ -67,13 +166,6 @@
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3872.4992802380416!2d121.519141!3d13.928851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe5045bbbb19a689!2sOppa%20Fitness%20Gym!5e0!3m2!1sen!2sph!4v1676902706061!5m2!1sen!2sph"
                     width="100%" height="450" style="border:0; border-radius: 25px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        <div class="submitBtn">
-            <div class="button-container">
-                <button class="btn btn-dark btn-lg submitbtn" type="button">
-                    <a href="index.html">Submit</a>
-                </button>
             </div>
         </div>
 

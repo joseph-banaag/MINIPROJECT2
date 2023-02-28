@@ -76,6 +76,8 @@ body {
     color: var(--light);
     transform: scale(1.2);
     z-index: 9999;
+    /* background: top; */
+    position: relative;
 }
 
 .user-profile {
@@ -337,8 +339,24 @@ body {
     /* justify-content: center; */
     align-items: center;
     margin-bottom: 1rem;
+    opacity: 0;
+    border-radius: 0px 50px 50px 0px;
+    animation: pop 1s 2s ease forwards;
+    transition: 2s;
 
 }
+
+@keyframes pop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 .bottombar__content {
     position: relative;
@@ -507,6 +525,8 @@ body {
 
     #hamburger-icon {
         display: block;
+        width: 100%;
+        /* border: 3px solid red; */
     }
 
     .oppaNavList {
@@ -678,6 +698,7 @@ body {
         margin-left: auto;
         left: 0;
         right: 0;
+        cursor: pointer;
     }
 
     .oppaLogo {

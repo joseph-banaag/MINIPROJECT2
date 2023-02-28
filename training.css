@@ -20,130 +20,67 @@ body {
     font-family: 'Play', sans-serif;
 }
 
+
+
 .heading-container {
-    width: 85vw;
-    margin: auto;
-}
-
-.training-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: fit-content;
-    height: 100%;
-    width: 100vw;
-
-
-}
-
-.trainingerwrapper {
-    display: flex;
-    justify-content: space-evenly;
-    width: fit-content;
-    margin: auto;
-    padding: 2rem;
-
-}
-
-
-#heading1 {
-    width: 100%;
+    /* border: 3px solid yellow; */
     text-align: center;
-    margin-block: 5rem;
-    font-size: 4rem;
-    color: var(--light);
-    text-shadow: .75px .75px var(--dark900);
-    /* line-height: 1; */
-}
-
-.training-day h3 {
-    font-size: 2.5rem;
-    color: black;
-    text-shadow: 0.95px 0.95px grey;
-    width: 13rem;
-    text-align: center;
-
-}
-
-.training-hour {
+    height: 20vh;
+    margin: auto;
     align-items: center;
-    text-align: center;
-    margin-block: 1rem;
-
+    display: flex;
+    justify-content: center;
 }
 
-.btn {
-    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
-    transition: 400ms;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-}
-
-.hour {
-    margin-block: 1rem;
-}
-
-.hour a {
-    text-decoration: none;
+.heading-container h1 {
     color: var(--light);
-}
-
-.submitButton {
-    text-align: center;
-    text-decoration: none;
-
-}
-
-.submitButton a {
-    text-decoration: none;
-    color: var(--light);
-}
-
-.btnC {
-    width: 8rem;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
-    transition: 400ms;
+    font-size: 3rem;
 }
 
-.btnC:hover {
-    transform: scale(1.1);
-}
-
-.first-row-days-ofD-week {
+.coaching-request {
+    /* border: 3px solid black; */
+    height: 50vh;
     display: flex;
-    gap: 2.5rem;
-    margin-right: 2rem;
+    justify-content: space-between;
+
 }
 
-.second-row-days-ofD-week {
+.card {
+    background-color: var(--dark800);
+
+}
+
+#coaches {
+    /* border: solid 3px blue; */
+    margin: auto;
+    align-items: center;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
     display: flex;
-    gap: 2.5rem;
+    justify-content: center;
+
 }
 
-@media (max-width: 900px) {
+#coaches p {
+    text-indent: 2rem;
+    margin-bottom: 1rem;
+    color: var(--light);
+}
 
+#coaches h5 {
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--light);
+}
 
-    .trainingerwrapper {
-        width: 100%;
-    }
-
-    .first-row-days-ofD-week {
-        display: flex;
-        margin-bottom: 3rem;
-        justify-content: center;
-        width: 80vw;
-    }
-
-    .second-row-days-ofD-week {
-        display: flex;
-        margin-left: -5rem;
-        justify-content: center;
-        width: 80vw;
-    }
-
-    .trainingerwrapper {
-        display: block;
-    }
+#coaches a {
+    text-align: center;
+    border: solid 3px var(--contrast);
+    margin: auto;
+    width: 100%;
+    padding: .5rem;
+    color: var(--dark800);
+    font-weight: bold;
 }
