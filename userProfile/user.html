@@ -371,29 +371,34 @@
             </div> -->
         </div>
     </div>
-    <!-- Bottom banner -->
-    <div class="bottombar1 text-center">
-        <div class="bottombar1__content">
-            <div class="bottombar1__text">
-                <h5><strong class="cong">CONGRATULATIONS!</strong> You are half way there. <br><span
-                        class="warrior">Keep it up warrior!</span> </h5>
 
-            </div>
-            <button class="bottombar1__close" type="button">&times;</button>
-        </div>
-    </div>
 
-    <script>
-        document.addEventListener("click", function (e) {
-            if (e.target.className.indexOf("bottombar1__close") !== -1) {
-                document.body.removeChild(e.target.parentElement.parentElement);
-            }
-        });
-    </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
+        <div class="bottombar text-center">
+            <div class="bottombar__content">
+                <div class="bottombar__text">
+                    <h5>Subscribe now to receive updates on our discount!</h5>
+                    <button class="btn btn-secondary text-light d-flex justify-content-center"
+                        style="border: 1px black solid; margin: auto; border-radius: 20px" id="subsBtn">
+                        Subscribe
+                    </button>
+                </div>
+                <button class="bottombar__close" type="button">&times;</button>
+            </div>
+        </div>
+        
+        <script>
+            document.addEventListener("click", function (e) {
+                if (e.target.className.indexOf("bottombar__close") !== -1) {
+                    document.body.removeChild(e.target.parentElement.parentElement);
+                }
+            });
+        </script>
 </body>
 <script src="user.js"></script>
 

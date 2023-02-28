@@ -282,77 +282,7 @@ body {
     border-radius: 30px;
 }
 
-/* !banner */
-.bottombar1 {
-    position: fixed;
-    /* top: 10%; */
-    right: 20%;
-    width: 50%;
-    height: 20%;
-    background: var(--contrast);
-    color: #f3efe0;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    border: 4px solid var(--dark800);
-    opacity: 0;
-    border-radius: 50px 50px 50px 50px;
-    animation: pop 1s 2s ease forwards;
-    transition: 2s;
 
-}
-
-@keyframes pop {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.bottombar1__content {
-    position: relative;
-    max-width: 750px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-
-}
-
-.bottombar1__close {
-    background: none;
-    border: none;
-    color: #f3efe0;
-    cursor: pointer;
-    font-size: 3rem;
-    margin-left: 1rem;
-    margin-right: 2rem;
-    /* border: 3px solid black; */
-
-}
-
-.bottombar1__text {
-    padding: 5%;
-}
-
-.bottombar1__text h5 {
-    color: black;
-    text-shadow: .5px .75px var(--dark800);
-}
-
-.cong {
-    color: black;
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-.warrior {
-    font-size: 2rem;
-    color: var(--light);
-}
 
 #subsBtn:hover {
     /* background: none; */
@@ -360,7 +290,7 @@ body {
 
 }
 
-/* !banner */
+
 
 @media (max-width: 1200px) {
 
