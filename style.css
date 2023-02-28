@@ -156,6 +156,11 @@ body {
     z-index: 1;
 }
 
+.hero-container h3 {
+    color: var(--light);
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
+}
+
 .heroArea {
     display: flex;
     justify-content: center;
@@ -183,6 +188,11 @@ body {
 .chat-wrapper {
     background-color: var(--dark600);
 
+}
+
+.chat-wrapper h1 {
+    color: var(--light);
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
 }
 
 .chat_section {
@@ -258,6 +268,10 @@ body {
     max-height: 45rem;
     width: 100%;
     padding-bottom: 3rem;
+}
+
+.showMore h3 {
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
 }
 
 #xtraDiv {

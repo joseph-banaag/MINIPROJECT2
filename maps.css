@@ -29,6 +29,12 @@ body {
     color: var(--light);
 }
 
+.titleHead h1 {
+    color: var(--light);
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
+    font-size: 3rem;
+}
+
 .submitBtn {
     margin: auto;
     display: flex;

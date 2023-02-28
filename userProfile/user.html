@@ -9,6 +9,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="img/OppaFitnessGym.png" type="image/icon type" />
 
     <!-- ?Google Fonts -->
@@ -22,38 +23,106 @@
 </head>
 
 <body style="width: 100%;">
-    <div class="topbar-userprofile d-flex flex-row-reverse">
-        <div class="profileContainer d-flex mt-5">
+    <div class="navBar">
+        <div class="col-5 oppaLogo" id="brand">
+            <a href="../index.html">
+                <img src="../img/OppaFitnessGym.png" alt="GymLogo" class="oppaFitnessLogo" /></a>
+            <h1 class="oppaName">Oppa Fitness gym</h1>
+        </div>
+        <div class="col-7 oppaNavList">
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="../apptForm.html" class="navoptions">Schedule your appointment</a>
+                </button>
+            </div>
 
-            <li class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <span>Joseph B.</span>
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="../training.html" class="navoptions">Training & Coaching</a>
+                </button>
+            </div>
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="../sitemap.html" class="navoptions">Find our Location</a>
+                </button>
+            </div>
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="../chat.html" class="navoptions">Chat with us</a>
+                </button>
+            </div>
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="user.html" class="navoptions">
+                        <div class="topbar-userprofile d-flex flex-row-reverse">
+                            <img src="../img/profile.png" alt="profile" class="user-profile">
 
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Progress report</a></li>
-                    <li><a class="dropdown-item" href="#">BMI Calculator</a></li>
-                    <li><a class="dropdown-item" href="#">Chat with Coach</a></li>
-                    <li><a class="dropdown-item" href="#">Feedback</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span>Joseph B.</span>
 
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="userProfile/user.html">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Progress report</a></li>
+                                    <li><a class="dropdown-item" href="#">BMI Calculator</a></li>
+                                    <li><a class="dropdown-item" href="#">Chat with Coach</a></li>
+                                    <li><a class="dropdown-item" href="#">Feedback</a></li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
 
-                    <li><a class="dropdown-item" href="#">Switch account</a></li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
-            </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
 
-            <img src="../img/profile.png" alt="profile" class="user-profile">
+                                    <li><a class="dropdown-item" href="#">Switch account</a></li>
+                                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                </ul>
+                            </li>
 
 
+                        </div>
+                    </a>
+                </button>
+            </div>
         </div>
     </div>
+
+    <div class="bg-dark">
+        <div class="container d-flex justify-content-center bg-dark">
+            <div class="hamburger-menu-container">
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+
+                    <ul class="mobile-menu">
+                        <li><a href="./apptForm.html">Schedule your appointment</a></li>
+
+                        <li><a href="training.html">Training & Coaching</a></li>
+
+                        <li><a href="sitemap.html">Find our Location</a></li>
+
+                        <li><a href="chat.html">Chat with us</a></li>
+                        <li><a href="./userProfile/user.html">Profile</a></li>
+
+
+                        <!-- <li><a class="dropdown-item" href="./userProfile/user.html">Profile</a></li> -->
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle("open");
+        }
+    </script>
+
+
+
 
 
 
@@ -183,7 +252,7 @@
                 </div>
 
 
-<!-- !illustration -->
+                <!-- !illustration -->
                 <div class="progress-bar-container">
                     <div class="physic-illustration">
 
@@ -303,19 +372,20 @@
         </div>
     </div>
     <!-- Bottom banner -->
-    <div class="bottombar text-center">
-        <div class="bottombar__content">
-            <div class="bottombar__text">
-                <h5><strong class="cong">CONGRATULATIONS!</strong>    You are half way there. <br><span class="warrior">Keep it up warrior!</span> </h5>
+    <div class="bottombar1 text-center">
+        <div class="bottombar1__content">
+            <div class="bottombar1__text">
+                <h5><strong class="cong">CONGRATULATIONS!</strong> You are half way there. <br><span
+                        class="warrior">Keep it up warrior!</span> </h5>
 
             </div>
-            <button class="bottombar__close" type="button">&times;</button>
+            <button class="bottombar1__close" type="button">&times;</button>
         </div>
     </div>
 
     <script>
         document.addEventListener("click", function (e) {
-            if (e.target.className.indexOf("bottombar__close") !== -1) {
+            if (e.target.className.indexOf("bottombar1__close") !== -1) {
                 document.body.removeChild(e.target.parentElement.parentElement);
             }
         });

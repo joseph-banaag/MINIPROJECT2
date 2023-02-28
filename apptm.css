@@ -27,6 +27,17 @@ body {
     margin: 2rem;
 }
 
+.titleHead h1 {
+    color: var(--light);
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
+    font-size: 3rem;
+}
+
+.titleHead p {
+    color: var(--light);
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
+}
+
 .title-item {
     font-size: 4rem;
 
