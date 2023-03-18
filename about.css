@@ -31,7 +31,7 @@ body {
     text-align: center;
     font-size: 4rem;
     color: var(--dark900);
-    text-shadow: 1px 1px rgb(209, 209, 209);
+    text-shadow: .5px .75px rgb(209, 209, 209);
 }
 
 
@@ -39,8 +39,8 @@ body {
     height: 15rem;
     padding: 1.5rem;
     font-size: 1.75rem;
-    color: var(--light);
-    text-shadow: 1px 1px var(--dark800);
+    color: var(--dark800);
+    text-shadow: 1px 1px var(--dark400);
     margin-inline: 2rem;
     padding-inline: 4rem;
     text-indent: 5rem;

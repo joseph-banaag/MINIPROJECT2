@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="about.css">
     <link rel="icon" href="img/OppaFitnessGym.png" type="image/icon type" />
     <script src="appointment.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 
     <!-- ?Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,27 +22,116 @@
 
 <body style="width: 100%;">
 
-    <div class="about-container">
-            <h1 class="title-name">About Us</h1>
+    <div class="navBar">
+        <div class="col-5 oppaLogo" id="brand">
+            <a href="index.html">
+                <img src="img/OppaFitnessGym.png" alt="GymLogo" class="oppaFitnessLogo" /></a>
+            <h1 class="oppaName">Oppa Fitness gym</h1>
+        </div>
+        <div class="col-7 oppaNavList">
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="./apptForm.html" class="navoptions">Appointment</a>
+                </button>
+            </div>
 
-            <div class="paragraph">Oppa Fitness Gym was founded on January 21st, 2023. We are located at Brgy Tumbaga
-                II, Sariaya, Quezon. The location is primarily surrounded by trees and feilds. The gym is in a
-                high-ceiling
-                covered court that can accomodate more than 50 persons at the same time. </div>
-            <br>
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="training.html" class="navoptions">Training & Coaching</a>
+                </button>
+            </div>
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="sitemap.html" class="navoptions">Our Location</a>
+                </button>
+            </div>
 
-            <div class="paragraph">Our business mission and vision is to provide healthy option to our people that
-                will lead them to a better lifestyle and health investment against drugs and alcohol. </div>
-    </div>
+            <div class="col-2 4 oppaNavListItems">
+                <button class="btn">
+                    <a href="./userProfile/user.html" class="navoptions">
+                        <div class="topbar-userprofile d-flex flex-row-reverse">
+                            <img src="./img/doks.png" alt="profile" class="user-profile">
 
-    <div class="submitBtn" style="align-items: center;" id="signbutton">
-        <div class="button-container">
-            <button class="btn btn-dark btn-lg submitbtn1" type="button"
-                style="height: 4rem; margin-top: 2.8rem; border-radius: 15px;">
-                <a href="index.html">Home</a>
-            </button>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span class="profileName">Joseph B.</span>
+
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="userProfile/user.html">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Progress report</a></li>
+                                    <li><a class="dropdown-item" href="#">BMI Calculator</a></li>
+                                    <li><a class="dropdown-item" href="#">Chat with Coach</a></li>
+                                    <li><a class="dropdown-item" href="#">Feedback</a></li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="./AdminAccount/AdminPortal.html">Switch
+                                            account</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                </ul>
+                            </li>
+
+
+                        </div>
+                    </a>
+                </button>
+            </div>
         </div>
     </div>
+
+
+    <div class="bg-dark">
+        <div class="container d-flex justify-content-center bg-dark">
+            <div class="hamburger-menu-container">
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+
+                    <ul class="mobile-menu">
+                        <li><a href="./apptForm.html">Appointment</a></li>
+
+                        <li><a href="training.html">Training & Coaching</a></li>
+
+                        <li><a href="sitemap.html">Our Location</a></li>
+
+                        <li><a href="./userProfile/user.html">Profile</a></li>
+
+
+                        <!-- <li><a class="dropdown-item" href="./userProfile/user.html">Profile</a></li> -->
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle("open");
+        }
+    </script>
+
+    <div class="about-container">
+        <h1 class="title-name">About Us</h1>
+
+        <div class="paragraph">Oppa Fitness Gym was founded on January 21st, 2023. We are located at Brgy Tumbaga
+            II, Sariaya, Quezon. The location is primarily surrounded by trees and feilds. The gym is in a
+            high-ceiling
+            covered court that can accommodate more than 50 persons at the same time. </div>
+        <br>
+
+        <div class="paragraph">Our business mission and vision is to provide healthy option to our people that
+            will lead them to a better lifestyle and health investment against drugs and alcohol. </div>
+    </div>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

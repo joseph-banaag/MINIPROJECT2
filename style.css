@@ -41,6 +41,7 @@ body {
 .oppaName {
     color: var(--contrast);
     text-shadow: .75px .75px var(--dark900);
+
 }
 
 .oppaFitnessLogo {
@@ -51,7 +52,7 @@ body {
     display: flex;
     height: 15rem;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
     transition: 100ms;
@@ -60,7 +61,7 @@ body {
 
 .navoptions {
     color: var(--light);
-    font-size: large;
+    font-size: 1.25rem;
     text-decoration: none;
     transition: width 400ms, height 400ms, transform 400ms;
     text-shadow: .75px .75px var(--dark900);
@@ -118,10 +119,14 @@ body {
     /* border: 3px solid red; */
 }
 
+.profileName {
+    font-size: 1.25rem;
+}
+
 .showEquipment {
     max-height: 1050px;
     width: 100%;
-    background: url(./img/oppaBG.png);
+    background: url(./img/edited.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -268,8 +273,8 @@ body {
     height: 35rem;
     width: 100%;
     padding-bottom: 3rem;
-    padding-top: -3rem;
-    margin-top: -3rem;
+    /* padding-top: -3rem;
+    margin-top: -3rem; */
 }
 
 .showMore h3 {
@@ -285,6 +290,8 @@ body {
     text-shadow: 1px 1px grey;
     font-size: 2.5rem;
 }
+
+
 
 .MainFoot {
     position: relative;
@@ -337,10 +344,14 @@ body {
 
 .footer-right-items {
     color: var(--contrast);
+    font-size: 1.9rem;
     text-shadow: .75px .75px var(--dark900);
 }
 
-
+#socialMedia svg {
+    /* border: solid red 3px; */
+    margin-bottom: .5rem;
+}
 
 /* !banner */
 .bottombar {
@@ -608,7 +619,7 @@ body {
         width: 100%;
     }
 
-    
+
 }
 
 @media (max-width: 950px) {
@@ -653,9 +664,10 @@ body {
 
     }
 
-    .hero-container {
+    /* .hero-container {
         backdrop-filter: none;
-    }
+        background: transparent!important;
+    } */
 
     .marquee-content-wrapper {
         height: 20rem;
@@ -982,27 +994,27 @@ body {
         text-align: center;
     }
 
-        .rowImg1 {
-            border-radius: 10px;
-            height: 100%;
-        }
-    
-        .marquee-content-wrapper {
-            height: 20rem;
-        }
-    
-        .rowContainter {
-            height: 12rem;
-            width: 12rem;
-        }
-    
-        #marquee-list {
-            height: 100%;
-    
-        }
-    
-        .showMore {
-            height: 33rem;
-            padding: 1px;
-        }
+    .rowImg1 {
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    .marquee-content-wrapper {
+        height: 20rem;
+    }
+
+    .rowContainter {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    #marquee-list {
+        height: 100%;
+
+    }
+
+    .showMore {
+        height: 33rem;
+        padding: 1px;
+    }
 }

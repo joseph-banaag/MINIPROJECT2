@@ -138,6 +138,12 @@ body {
     font-weight: bold;
 }
 
+#chat_text_styled {
+    color: var(--dark800);
+    text-shadow: 1px 1px var(--dark400);
+    font-weight: bold;
+}
+
 /* ! */
 
 .submitBtn {
