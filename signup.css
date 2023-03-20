@@ -17,7 +17,7 @@
 }
 
 body {
-    background: var(--dark800) !important;
+    background: radial-gradient(#b1b6fc, #1c1d2b);
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
