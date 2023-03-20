@@ -191,7 +191,7 @@ label {
 
 /* Set a style for the submit/send button */
 .form-container .btn {
-    background-color: #04AA6D;
+    background-color: #117551;
     color: var(--light);
     padding: 1rem 2rem;
     border: none;
@@ -200,6 +200,10 @@ label {
     margin-bottom: 10px;
     opacity: 0.8;
 
+}
+
+.close_button {
+    background-color: #be2025 !important;
 }
 
 /* Add a red background color to the cancel button */
@@ -220,3 +224,6 @@ label {
 }
 
 /* ! Chat button */
+
+
+

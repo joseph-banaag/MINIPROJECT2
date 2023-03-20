@@ -144,7 +144,7 @@
                 <div class="formsectn1" id="appointmentSection">
                     <h4 class="formcontTitle">Appointment Date and Time:</h4>
                     <div class="form-floating">
-                        <input type="datetime-local" class="form-control" id="floatingName" placeholder="Date & Time" />
+                        <input type="datetime-local" class="form-control" id="floatingName" placeholder="Date & Time" required/>
                         <label for="floatingName" class="floatingName"></label>
                     </div>
                 </div>
@@ -156,12 +156,12 @@
                     <div class="forName">
                         <div class="form-floating" id="firstName">
                             <input type="text" class="form-control firstName" id="floatingName" placeholder="First Name"
-                                style="text-transform: capitalize;" />
+                                style="text-transform: capitalize;" required />
                             <label for="floatingName" class="floatingName">First</label>
                         </div>
                         <div class="form-floating" id="lastName">
                             <input type="text" class="form-control lastName" id="floatingName" placeholder="Last Name"
-                                style="text-transform: capitalize;" />
+                                style="text-transform: capitalize;" required/>
                             <label for="floatingName" class="floatingName ">Last</label>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                 <div class="formsectn1" id="contactSection">
                     <h4 class="formcontTitle">Contact Number:</h4>
                     <div class="form-floating">
-                        <input type="number" class="form-control" id="floatingName" placeholder="Time" />
+                        <input type="number" class="form-control" id="floatingName" placeholder="Time" required/>
                         <label for="floatingName" class="floatingName">09*********</label>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
             <h4 class="formcontTitle">Address:</h4>
             <div class="form-floating">
                 <input type="text" class="form-control" id="floatingName" placeholder="Street address"
-                    style="text-transform: capitalize;" />
+                    style="text-transform: capitalize;" required/>
                 <label for="floatingName" class="floatingName">Street address</label>
             </div>
         </div>
@@ -196,7 +196,7 @@
         <div class="address-container">
             <div class="form-floating">
                 <input type="text" class="form-control" id="floatingName" placeholder="Street address"
-                    style="text-transform: capitalize;" />
+                    style="text-transform: capitalize;" required/>
                 <label for="floatingName" class="floatingName">Address line 2</label>
             </div>
         </div>
@@ -205,12 +205,12 @@
             <div class="city-zipcode-container">
                 <div class="form-floating" id="city">
                     <input type="text" class="form-control city" id="floatingName" placeholder="City"
-                        style="text-transform: capitalize;" />
+                        style="text-transform: capitalize;" required/>
                     <label for="floatingName" class="floatingName">City</label>
                 </div>
 
                 <div class="form-floating" id="zipcode">
-                    <input type="number" class="form-control zipcode" id="floatingName" placeholder="Street address" />
+                    <input type="number" class="form-control zipcode" id="floatingName" placeholder="Street address" required/>
                     <label for="floatingName" class="floatingName">ZIP Code</label>
                 </div>
             </div>
