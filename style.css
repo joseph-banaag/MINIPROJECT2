@@ -23,7 +23,6 @@ body {
 }
 
 
-
 .navBar {
     min-height: 15rem;
     width: 100%;
@@ -151,7 +150,7 @@ body {
     margin-top: 5rem;
     min-height: 10rem;
     align-items: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
     z-index: 0;
     border-radius: 80px;
     padding: 2rem;
@@ -360,12 +359,13 @@ body {
     bottom: 0;
     width: 50%;
     margin: auto;
-    background: var(--contrast);
+    background: #2b2d4288;
+    backdrop-filter: blur(10px);
     color: #f3efe0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     padding: 10px;
-    border: 4px solid var(--dark800);
+    border: 4px solid var(--dark600);
     border-radius: 0px 50px 50px 0px;
     /* display: flex; */
     /* justify-content: center; */
@@ -409,9 +409,13 @@ body {
 
 }
 
+#subsBtn {
+    background-color: var(--dark800);
+}
+
 #subsBtn:hover {
     /* background: none; */
-    background-color: var(--dark800);
+    background-color: var(--dark600);
 
 }
 
@@ -451,12 +455,7 @@ body {
 
 }
 
-.rowImg1 {
-    width: 100%;
-    height: auto;
-    border: 3px solid var(--dark600);
-    border-radius: 20px;
-}
+
 
 /* !  START OF THE HAMBURGER MENU */
 
@@ -615,10 +614,6 @@ body {
         padding: 1px;
     }
 
-    .rowImg1 {
-        height: 100%;
-        width: 100%;
-    }
 
 
 }
@@ -687,9 +682,7 @@ body {
         padding: 1px;
     }
 
-    .rowImg1 {
-        height: 100%;
-    }
+
 }
 
 
@@ -784,10 +777,6 @@ body {
         display: none;
     }
 
-    .rowImg1 {
-        border-radius: 10px;
-        height: 100%;
-    }
 
     .marquee-content-wrapper {
         height: 20rem;
@@ -995,10 +984,7 @@ body {
         text-align: center;
     }
 
-    .rowImg1 {
-        border-radius: 10px;
-        height: 100%;
-    }
+
 
     .marquee-content-wrapper {
         height: 20rem;
