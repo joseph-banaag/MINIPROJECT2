@@ -117,7 +117,13 @@
         }
     </script>
 
-
+    <div class="svg_top_panel" style="height: 2rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#2B2D42" fill-opacity="1"
+                d="M0,64L48,58.7C96,53,192,43,288,53.3C384,64,480,96,576,90.7C672,85,768,43,864,37.3C960,32,1056,64,1152,69.3C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+    </div>
 
 
 
@@ -375,24 +381,32 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
-        <div class="bottombar1 text-center">
-            <div class="bottombar1__content">
-                <div class="bottombar1__text">
-                    <h5>Congratulations!</h5>
-                    <p>You are half way there! KEEP IT UP WARRIOR!</p>
-                    
-                </div>
-                <button class="bottombar1__close" type="button">&times;</button>
+    <div class="bottombar1 text-center">
+        <div class="bottombar1__content">
+            <div class="bottombar1__text">
+                <h5>Congratulations!</h5>
+                <p>You are half way there! KEEP IT UP WARRIOR!</p>
+
             </div>
+            <button class="bottombar1__close" type="button">&times;</button>
         </div>
-        
-        <script>
-            document.addEventListener("click", function (e) {
-                if (e.target.className.indexOf("bottombar1__close") !== -1) {
-                    document.body.removeChild(e.target.parentElement.parentElement);
-                }
-            });
-        </script>
+    </div>
+
+    <script>
+        document.addEventListener("click", function (e) {
+            if (e.target.className.indexOf("bottombar1__close") !== -1) {
+                document.body.removeChild(e.target.parentElement.parentElement);
+            }
+        });
+    </script>
+
+    <div class="svg_bottom_panel">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+            <path fill="#2B2D42" fill-opacity="1"
+                d="M0,64L48,58.7C96,53,192,43,288,53.3C384,64,480,96,576,90.7C672,85,768,43,864,37.3C960,32,1056,64,1152,69.3C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
 </body>
 <script src="user.js"></script>
 

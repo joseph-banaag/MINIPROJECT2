@@ -232,12 +232,16 @@
 
 
     <!-- !new design -->
-    <div class="container clients-section">
-<div class="col-6 items_wrapper_left_panel">
-  <img src="./img/OppaEntrance.jpg" width="460" height="620" class="rowImg1" alt="img" />
-
-</div>
+    <div class="clients-section">
+      <div class="items_wrapper_left_panel">
+        <h2>Go to your profile and track your progress in real-time. </h2>
+      </div>
+      <div class="client_section_login">
+        <button class="btn btn-lg btn-dark text-light">Create your account</button>
+        <button class="btn btn-lg btn-dark text-light">Sign in</button>
+      </div>
     </div>
+
     <!-- !new design -->
     <div class="svg_bottom_section">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 170">
@@ -248,7 +252,34 @@
     </div>
   </div>
   <!-- svg section -->
+  <!-- !? Start of the Chat button -->
 
+  <button class="open-button" onclick="openForm()">Chat</button>
+
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h4>Hello!</h4>
+
+      <label for="msg"><b>Tell us how can we help you?</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+      <dv class="chat_button">
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </dv>
+    </form>
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+
+  <!-- !? end of the Chat button -->
 
   <div class="container-fluid MainFoot">
     <div class="col-6 footerLeft">
@@ -305,8 +336,8 @@
     <div class="bottombar__content">
       <div class="bottombar__text">
         <h5>Subscribe now to receive updates on our discount!</h5>
-        <button class="btn btn-secondary text-light d-flex justify-content-center"
-          style="border: 1px black solid; margin: auto; border-radius: 20px" id="subsBtn">
+        <button class="btn text-light d-flex justify-content-center"
+          style="border:3px solid grey; margin: auto; border-radius: 20px" id="subsBtn">
           Subscribe
         </button>
       </div>
