@@ -1,4 +1,4 @@
-/:root {
+:root {
     --dark800: #2B2D42;
     --dark900: black;
     --dark600: #555881;
@@ -9,31 +9,68 @@
 
 .clients_section {
     border: 3px solid red;
-    height: 40vh;
+    height: 80vh;
 
 }
 
 
 .showMore {
-    background-image: url(../img/bg.png);
+    /* border: 3px solid yellow;
+    background-image: url(../img/bg.png); */
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 1rem;
 }
 
 .showroom_title {
-    height: 15vh;
+    height: 12vh;
     text-align: center;
     padding: 2rem;
-
     color: var(--light);
 }
 
 .showroom_title h1 {
-    background-color: blue;
+    background-color: #2b2d4288;
     width: fit-content;
     text-align: center;
     text-shadow: 1px 1px var(--dark600);
     margin: auto;
-    padding: .5rem;
-    border-radius: 20px;
+    padding: 1rem;
+    border-radius: 40px;
+
+}
+
+/* ! new div for equipments */
+.equipment_items {
+    height: 30rem;
+    /* padding: 2rem; */
+
+}
+
+.svg_section_container {
+    background: radial-gradient(#8c91cf, #2B2D42);
+}
+
+.equipment_container_top {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    background: none !important;
+}
+
+.equipment_container_bottom {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    background: none !important;
+}
+
+/* !SVG */
+.svg_top_section {
+    height: 10vh;
+}
+
+.gym_equipments {
+    margin-top: 2rem;
+    /* border: 3px solid red; */
 }
