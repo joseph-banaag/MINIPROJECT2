@@ -1,11 +1,12 @@
 :root {
-    --dark800: #2B2D42;
-    --dark900: black;
-    --dark600: #555881;
-    --dark400: #8d99ae;
-    --light: #edf2f4;
-    --contrast: #f12229;
-
+    --cyan-900: #000103;
+    --cyan-800: #061528;
+    --cyan-700: #11334d;
+    --cyan-600: #215971;
+    --cyan-500: #378696;
+    --cyan-400: #51b7ba;
+    --cyan-300: #71dfd4;
+    --white: #fdffff;
 }
 
 
@@ -17,21 +18,40 @@
 }
 
 body {
-    background: radial-gradient(#b1b6fc, #1c1d2b);
+    min-height: 100vh;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+.form-containter {
+    height: 65vh;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+.google-maps-container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    border: 8px solid var(--cyan-700);
+        filter: drop-shadow(3px 3px 3px var(--cyan-600));
+    border-radius: 30px;
+}
+
 .titleHead {
-    margin: 3rem;
+    margin-top: 9rem;
     text-align: center;
-    color: var(--light);
+    color: var(--white);
 }
 
 .titleHead h1 {
-    color: var(--light);
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
+    padding: 2rem;
+    color: var(--cyan-900);
+    filter: drop-shadow(3px 3px 3px var(--cyan-700));
     font-size: 3rem;
 }
 

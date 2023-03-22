@@ -1,11 +1,12 @@
 :root {
-    --dark800: #2B2D42;
-    --dark900: black;
-    --dark600: #555881;
-    --dark400: #8d99ae;
-    --light: #edf2f4;
-    --contrast: #f12229;
-    --contrast-400: #be2025;
+    --cyan-900: #000103;
+    --cyan-800: #061528;
+    --cyan-700: #11334d;
+    --cyan-600: #215971;
+    --cyan-500: #378696;
+    --cyan-400: #51b7ba;
+    --cyan-300: #71dfd4;
+    --white: #fdffff;
 }
 
 
@@ -19,23 +20,7 @@
     padding: 1rem;
 }
 
-.showroom_title {
-    height: 12vh;
-    text-align: center;
-    padding: 2rem;
-    color: var(--light);
 
-}
-
-
-.showroom_title h1 {
-    padding: 1rem;
-    border-radius: 40px;
-    background-color: #2b2d4280;
-    text-shadow: 2px 2px var(--dark800);
-    width: 100%;
-    filter: drop-shadow(5px 4px 4px #0f0f1188);
-}
 
 /* ! new div for equipments */
 .equipment_items {
@@ -45,7 +30,7 @@
 }
 
 .svg_section_container {
-    background: radial-gradient(#b1b6fc, #1c1d2b);
+    background: var(--white);
 }
 
 .equipment-container {
@@ -62,14 +47,14 @@
     border-radius: 30px;
     height: inherit;
     width: 100%;
-    filter: drop-shadow(5px 4px 40px rgba(0, 0, 0, 1));
+    filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 1));
     padding: 1rem;
 }
 
 .rowImg1_right {
     width: 100%;
     height: inherit;
-    filter: drop-shadow(5px 4px 40px rgba(0, 0, 0, 1));
+    filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 1));
     border-radius: 20px;
 
 }
@@ -77,6 +62,10 @@
 .equipment_items_left {
     margin: auto;
 
+}
+
+.gym_equipments {
+    margin-top: 2rem;
 }
 
 .items_wrapper_left_panel {
@@ -92,18 +81,32 @@
     display: flex;
 }
 
+.clients-section_top {
+    filter: drop-shadow(5px 4px 4px #000103);
+    background-color: #51b6ba96;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+    border-radius: 80px;
+    color: white;
+    font-size: clamp(2rem, 10vw, 4rem);
+    margin: auto;
+    padding: 1rem;
+
+}
+
 .clients-section {
-    filter: drop-shadow(5px 4px 4px #4a4d7088);
-    background-color: #2b2d4288;
+    filter: drop-shadow(5px 4px 4px #000103);
+    background-color: #51b6ba96;
     width: 75%;
-    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 10rem;
     align-items: center;
     backdrop-filter: blur(1px);
-    z-index: 0;
     border-radius: 80px;
     padding: 2rem;
     color: white;
@@ -132,18 +135,18 @@
 /* ! Chat button */
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
-    background: #2b2d4288;
+    background: var(--cyan-700);
     color: white;
     padding: 16px 20px;
-    border: 3px solid #8d99ae;
+    border: 3px solid var(--cyan-600);
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
     bottom: 23px;
-    left: 28px;
-    width: 180px;
+    left: 1.25rem;
+    width: 10rem;
     border-radius: 20px;
-    font-size: 1.25rem;
+    font-size: 1rem;
 
 }
 
@@ -162,14 +165,15 @@
 .form-container {
     max-width: 300px;
     padding: 1rem;
-    background: #2b2d4288;
+    background: #06152896;
     backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(5px 4px 4px #0f0f1188);
 }
 
 .form-container h4,
 label {
-    color: var(--light);
+    color: var(--white);
 }
 
 /* Full-width textarea */
@@ -192,7 +196,7 @@ label {
 /* Set a style for the submit/send button */
 .form-container .btn {
     background-color: #117551;
-    color: var(--light);
+    color: var(--white);
     padding: 1rem 2rem;
     border: none;
     cursor: pointer;
@@ -203,7 +207,11 @@ label {
 }
 
 .close_button {
-    background-color: #be2025 !important;
+    background-color: #e70e02 !important;
+}
+
+.send_button {
+    background-color: #069e2d !important;
 }
 
 /* Add a red background color to the cancel button */
@@ -224,6 +232,3 @@ label {
 }
 
 /* ! Chat button */
-
-
-

@@ -1,15 +1,19 @@
-body {
-    background: radial-gradient(#b1b6fc, #1c1d2b);
-    min-height: 100vh;
+:root {
+    --cyan-900: #000103;
+    --cyan-800: #061528;
+    --cyan-700: #11334d;
+    --cyan-600: #215971;
+    --cyan-500: #378696;
+    --cyan-400: #51b7ba;
+    --cyan-300: #71dfd4;
+    --white: #fdffff;
 }
 
-:root {
-    --dark800: #2B2D42;
-    --dark900: black;
-    --dark600: #555881;
-    --dark400: #8d99ae;
-    --light: #edf2f4;
-
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 * {
@@ -19,43 +23,46 @@ body {
     font-family: 'Play', sans-serif;
 }
 
-
+.training-container {
+    margin-top: 9rem;
+    height: 50rem;
+}
 
 .heading-container {
-    /* border: 3px solid yellow; */
     text-align: center;
-    height: 20vh;
+    /* height: 20vh; */
     margin: auto;
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 1px;
+    /* margin-top: 4rem; */
+    /* padding: 8rem; */
 }
 
 .heading-container h1 {
-    color: var(--light);
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
+    color: var(--cyan-900);
+    filter: drop-shadow(3px 3px 3px var(--cyan-700));
     font-size: 3rem;
+    padding: 2rem;
 }
 
 .coaching-request {
-    /* border: 3px solid black; */
-    height: 50vh;
     display: flex;
     justify-content: space-between;
 
 }
 
 .card {
-    background-color: var(--dark800);
     width: 18rem;
+    height: 35rem;
+    border: 3px solid var(--cyan-800);
+    background-color: var(--cyan-600);
 }
 
 #coaches {
-    /* border: solid 3px blue; */
     margin: auto;
     align-items: center;
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 1));
     display: flex;
     justify-content: center;
 
@@ -64,7 +71,7 @@ body {
 #coaches p {
     text-indent: 2rem;
     margin-bottom: 1rem;
-    color: var(--light);
+    color: var(--white);
 }
 
 #coaches h5 {
@@ -72,7 +79,7 @@ body {
     margin: auto;
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--light);
+    color: var(--white);
 }
 
 #coaches a {
@@ -96,7 +103,8 @@ body {
         margin-top: 3rem;
 
     }
-    .heading-container{
+
+    .heading-container {
         /* border: 3px solid red; */
         padding: 1px;
     }
@@ -110,7 +118,8 @@ body {
         font-size: 2rem;
         /* display: none; */
     }
-    .coaching-request{
+
+    .coaching-request {
         width: 100%;
     }
 
@@ -119,20 +128,22 @@ body {
         /* border: 3px solid red; */
         width: 20rem;
     }
-        .training-container {
-            /* border: 3px solid red; */
-            /* margin-top: 3rem; */
-            margin-bottom: 2rem;
-        }
+
+    .training-container {
+        /* border: 3px solid red; */
+        /* margin-top: 3rem; */
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width: 300px) {
 
-    .training-container{
+    .training-container {
         /* border: 3px solid red; */
         margin-top: 3rem;
         margin-bottom: 2rem;
     }
+
     .heading-container h1 {
         font-size: 2rem;
         /* display: none; */
@@ -146,6 +157,6 @@ body {
         margin: auto;
         /* border: 3px solid red; */
         width: 10rem;
-        
+
     }
 }

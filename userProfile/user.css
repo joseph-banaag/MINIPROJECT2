@@ -1,18 +1,17 @@
-body {
-    background: radial-gradient(#b1b6fc, #1c1d2b);
-    min-height: 100vh;
-}
 
 :root {
-    --dark800: #2B2D42;
-    --dark900: black;
-    --dark600: #555881;
-    --dark400: #8d99ae;
-    --light: #edf2f4;
-    --contrast: #f12229;
-
+    --cyan-900: #000103;
+    --cyan-800: #061528;
+    --cyan-700: #11334d;
+    --cyan-600: #215971;
+    --cyan-500: #378696;
+    --cyan-400: #51b7ba;
+    --cyan-300: #71dfd4;
+    --white: #fdffff;
 }
-
+body{
+background: linear-gradient(180deg, rgba(6, 21, 40, 1) 0%, rgba(17, 51, 77, 1) 50%, rgba(33, 89, 113, 1) 100%);
+}
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -68,7 +67,7 @@ body {
     width: 15vw;
     /* border: 3px solid red; */
     border-radius: 20px;
-    margin-top: 1rem;
+    margin-top: 8rem;
     margin-left: 2rem;
 }
 
@@ -132,7 +131,7 @@ body {
 .center-panel-section {
     height: 95vh;
     width: 80vw;
-    border: 3px solid var(--light);
+    border: 3px solid var(--white);
     border-radius: 20px;
     margin-top: 5%;
     margin-left: 2rem;
@@ -143,14 +142,12 @@ body {
 
 .panel-section-wrapper {
     display: flex;
+    /* border: 3px solid red; */
+    height: inherit;
+    margin-top: 5rem;
 }
 
-.profileContainer {
-    /* border: solid 3px red; */
-    transition: 700ms;
 
-
-}
 
 .profileContainer:hover {
     transform: scale(1.2);
