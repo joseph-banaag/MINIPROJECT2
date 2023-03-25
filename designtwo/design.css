@@ -70,6 +70,9 @@
 
 .items_wrapper_left_panel {
     display: flex;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
 }
 
 .equipment_items_right {
