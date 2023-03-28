@@ -27,7 +27,7 @@ body {
     margin-top: 9rem;
     height: 65vh;
     padding: 2rem;
-    
+
 }
 
 .heading-container {
@@ -98,64 +98,114 @@ body {
     font-weight: bold;
 }
 
+.accord_list {
+    display: none;
+    width: inherit;
+}
+
 @media (max-width: 1000px) {
     .coaching-request {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1.5rem;
-    }
-
-
-    #coaches {
-        width: 100%;
+        display: none;
     }
 
     .training-container {
-        height: inherit;
+        height: 16vh;
     }
+
+    .accord_list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5rem;
+    }
+
+    .accordImages {
+        margin-top: 4rem;
+        border: var(--cyan-800) 5px solid;
+    }
+
+    .accordion-button {
+        background-color: var(--cyan-600);
+        height: 8rem;
+    }
+
+    .accord_coach_name {
+        color: var(--white);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .accordion-body {
+        background-color: var(--cyan-800);
+        font-size: 1.7rem;
+        color: var(--white);
+        border: var(--cyan-800) 5px solid;
+        text-indent: 4rem;
+    }
+
+    .accord_coach_name:hover {
+        color: var(--cyan-700);
+    }
+
+    #message_btn {
+        font-size: 1.75rem;
+        background-color: var(--cyan-600);
+        border: 3px solid var(--cyan-800);
+        border-radius: 20px;
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        text-indent: 0rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .heading-container h1 {
+        font-size: 2.5rem;
+        /* display: none; */
+        padding: 4rem;
+    }
+
+    .accordImages {
+        margin-top: 2rem;
+    }
+
 }
 
 @media (max-width: 700px) {
     .heading-container h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         /* display: none; */
     }
 
-    .coaching-request {
-        width: 100%;
-    }
+}
 
-    #coaches {
-        margin: auto;
-    }
-
+@media (max-width:500px) {
     .training-container {
-        /* border: 3px solid red; */
-        /* margin-top: 3rem; */
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .accord_coach_name {
+        font-size: 1rem;
+    }
+
+    .heading-container h1 {
+        font-size: 2.5rem;
+        /* display: none; */
+        padding: 4rem;
     }
 }
 
 @media (max-width: 400px) {
 
-    .training-container {
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-    }
-
     .heading-container h1 {
-        font-size: 2rem;
+        font-size: 1.25rem;
+        padding: 4rem;
     }
 
-    .coaching-request {
-        width: 100%;
+    .training-container {
+        height: 5rem;
     }
 
-    #coaches {
-        margin: auto;
-        width: 100%;
-
-    }
 }
