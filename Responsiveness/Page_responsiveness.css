@@ -1,0 +1,134 @@
+
+    /* ! 1510px */
+@media (max-width: 1510px) {
+    .navBar {
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    .oppaNavList {
+        padding: 1rem;
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .MainFoot {
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footerLeft {
+        margin: auto;
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerRight {
+        margin: auto;
+        padding: 2rem;
+        width: 100%;
+
+    }
+
+    .footer-items {
+        text-align: center;
+    }
+
+    .social_list_wrapper {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerLogo {
+        margin: auto;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+    }
+
+    .vLiner {
+        height: 3px;
+        margin: auto;
+
+    }
+
+
+}
+
+/* !1300px */
+@media (max-width: 1300px) {}
+
+/* ! 1200px */
+@media (max-width: 1200px) {
+
+    .oppaNavList {
+        display: none;
+    }
+
+    .equipment_wrapper {
+        display: none;
+    }
+
+    .mobile_view {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .mView_items {
+        width: 100vw;
+    }
+
+    .m_view_img {
+        width: 75%;
+        height: inherit;
+        border-radius: 30px;
+        filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 1));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+/* !1000px */
+@media (max-width: 1000px) {
+
+    .mobile_view {
+        display: none;
+    }
+
+    .scrollable-section {
+        display: block;
+    }
+
+
+    .open-button {
+        width: 8rem;
+        height: 3rem;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-container {
+        max-width: 200px;
+    }
+
+    .form-container .btn {
+        display: flex;
+        justify-content: center;
+        width: 45%;
+
+    }
+}
+

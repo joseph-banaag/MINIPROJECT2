@@ -24,30 +24,23 @@ body {
 }
 
 #formcompiler {
-    /* border: 3px solid red; */
     padding: 1rem;
-
 }
 
 .formcontTitle {
     color: black;
-    text-shadow: .95px .95px grey;
-
+    text-shadow: .95px .95px var(--cyan-600);
 }
-
-
 
 .titleHead {
     width: 100%;
     height: 20vh;
-    /* border: purple 4px solid; */
     margin-top: 4rem;
     padding: 8rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
-.appoinment-parent {
-    /* border: 3px solid brown; */
-}
 
 .titleHead h1 {
     color: var(--cyan-900);
@@ -57,7 +50,6 @@ body {
 
 .titleHead p {
     color: var(--cyan-900);
-    /* filter: drop-shadow(3px 3px 3px var(--cyan-700)); */
 }
 
 .title-item {
@@ -103,14 +95,14 @@ body {
 }
 
 .form_content_wrapper {
+    margin: auto;
     border: 3px solid #2159719d;
     border-radius: 30px;
-    width: 45%;
+    width: 33vw;
     padding: 2rem;
     filter: drop-shadow(5px 4px 4px #00010328);
     background-color: #51b6ba4f;
     backdrop-filter: blur(1px);
-    /* border: 3px solid red; */
 }
 
 .form-control {
@@ -187,107 +179,130 @@ body {
 /* ! end of appointment form */
 
 
-@media (max-width: 750px) {
 
-    .form-containter {
-        height: 100%;
-        /* width: 100%; */
-        border: solid 4px grey;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
+@media (max-width: 1500px) {
+
+    #floatingName {
+        width: 40vw;
+        height: 3rem;
+    }
+
+    #floatingNameFname {
+        width: 19vw;
+        height: 3rem;
+    }
+
+    #floatingNameLname {
+        width: 19vw;
+        height: 3rem;
+    }
+
+    #floatingNameCity {
+        width: 19vw;
+        height: 3rem;
+    }
+
+    #floatingNameZip {
+        width: 19vw;
+        height: 3rem;
+    }
+
+    .form_content_wrapper {
+        padding: 1rem;
+        margin-top: 1rem;
+        width: 50vw;
     }
 
     #titleHead {
+        text-align: center;
+        gap: 1.75rem;
         height: fit-content;
         margin: auto;
 
     }
 
-    .formcompiler {
+
+}
+
+@media (max-width: 1300px) {
+
+    #floatingName {
+        width: 40vw;
+    }
+
+    #floatingNameFname {
+        width: 19vw;
+    }
+
+    #floatingNameLname {
+        width: 19vw;
+    }
+
+    #floatingNameCity {
+        width: 19vw;
+    }
+
+    #floatingNameZip {
+        width: 19vw;
+    }
+
+    .form_content_wrapper {
+        padding: 1rem;
+        margin-top: 1rem;
+        width: 50vw;
+    }
+
+    #titleHead {
+        text-align: center;
+        gap: 1.5rem;
         height: fit-content;
+        margin: auto;
+
+    }
+
+}
+
+@media (max-width: 700px) {
+    .submitbtn {
+        font-size: .85rem;
+        padding: 5px;
     }
 
     #floatingName {
-        justify-content: start;
-        text-align: start;
-        align-items: center;
-        align-content: start;
-        width: auto;
-
+        width: 58vw;
+        height: 2rem;
     }
 
-    .appoinment-parent {
-        position: relative;
+    #floatingNameFname {
+        width: 27vw;
+        height: 2rem;
     }
 
-    .appointment-wrapper {
-        margin: auto;
-
+    #floatingNameLname {
+        width: 27vw;
+        height: 2rem;
     }
 
-
-    .submitbtn {
-        font-size: 1rem;
+    #floatingNameCity {
+        width: 27vw;
+        height: 2rem;
     }
 
-    .titleHead h1 {
-        font-size: 2rem;
+    #floatingNameZip {
+        width: 27vw;
+        height: 2rem;
     }
 
-    .titleHead p {
-        font-size: 1rem;
+    .form_content_wrapper {
+        padding: 1rem;
+        margin-top: 1rem;
+        width: 70vw;
+        /* border: 3px solid red; */
     }
 
-    #appointmentSection {
-        position: relative;
+    .floatingName {
+        /* color: red; */
+        font-size: .75rem;
 
-        /* height: 10rem; */
     }
-
-    #appointmentSection div {
-        margin: auto;
-    }
-
-    #nameSection {
-        height: 10rem;
-        position: relative;
-    }
-
-    #nameSection h4 {
-        margin: auto;
-    }
-
-    #firstName {
-        position: absolute;
-        top: 4rem;
-    }
-
-    #lastName {
-        position: absolute;
-        top: 8rem;
-    }
-
-    #contactSection {
-        position: relative;
-    }
-
-
-
-    .city-zipcode-container {
-        display: inline;
-        margin: auto;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    #city {
-        margin-bottom: .5rem;
-    }
-
-    #zipcode {
-        margin-top: .75rem;
-    }
-
 }

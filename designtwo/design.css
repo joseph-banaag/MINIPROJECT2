@@ -37,32 +37,128 @@
     margin-top: 4rem;
 }
 
+/* original view */
+.equipment_wrapper {
+    display: block;
+}
+
+.mobile_view {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.m_view_img {
+    height: 55%;
+    border-radius: 30px;
+    filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 1));
+    padding: 1rem;
+}
+
+/* ? start of the overflow section */
+
+.scrollable-section {
+    display: none;
+    position: relative;
+}
+
+#selector_item {
+    background-color: var(--cyan-500);
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid var(--cyan-400);
+    border-radius: 9999px;
+    align-items: center;
+    transition: 400ms;
+}
+
+#selector_item:hover {
+    transform: scale(1.2);
+}
+
+#selector_item a {
+    color: var(--cyan-800);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+#selector_wrapper {
+    padding: 1rem;
+    width: inherit;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.scrollable-images {
+    height: 75vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+
+}
+
+#overflow_section {
+    margin: auto;
+    height: 100%;
+    width: inherit;
+}
+
+.overflow {
+    width: inherit;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.overflow_imgs {
+    border-radius: 30px;
+    filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 1));
+    padding: 1rem;
+    height: inherit;
+}
+
+#overflow_1,
+#overflow_2,
+#overflow_3,
+#overflow_4,
+#overflow_5 {
+    height: ;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ! end of the overflow section */
+
 /* !SVG */
 .svg_top_section {
     height: 10vh;
 }
 
 .rowImg1 {
-    /* border: 1px solid var(--dark600); */
+    /* border: 1px solid red; */
     border-radius: 30px;
     height: inherit;
     width: 100%;
     filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 1));
-    padding: 1rem;
+    padding: 2%;
 }
 
-.rowImg1_right {
-    width: 100%;
-    height: inherit;
-    filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 1));
-    border-radius: 20px;
-
-}
-
-.equipment_items_left {
-    margin: auto;
-
-}
 
 .gym_equipments {
     margin-top: 2rem;
@@ -70,14 +166,11 @@
 
 .items_wrapper_left_panel {
     display: flex;
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: auto;
     text-align: center;
 }
 
-.equipment_items_right {
-    padding: 1rem;
-}
 
 .right_section_top,
 .right_section_bottom {
@@ -87,15 +180,11 @@
 .clients-section_top {
     filter: drop-shadow(5px 4px 4px #000103);
     background-color: #51b6ba96;
-    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(1px);
     border-radius: 80px;
     color: white;
-    font-size: clamp(2rem, 10vw, 4rem);
-    margin: auto;
     padding: 1rem;
 
 }
@@ -121,7 +210,7 @@
 }
 
 .items_wrapper_left_panel h1 {
-    text-shadow: 2px 2px var(--dark800);
+    text-shadow: 2px 2px var(--cyan-800);
     width: 100%;
     filter: drop-shadow(5px 4px 4px #0f0f1188);
 }

@@ -19,6 +19,7 @@
   <!-- ?Style -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./designtwo/design.css">
+  <link rel="stylesheet" href="./Responsiveness/Page_responsiveness.css">
 
 
 </head>
@@ -86,8 +87,8 @@
   </div>
 
 
-  <div class="bg-dark">
-    <div class="container d-flex justify-content-center bg-dark">
+  <div class="navigation_menu">
+    <div class="container d-flex justify-content-center">
       <div class="hamburger-menu-container">
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
           <div class="bar1"></div>
@@ -185,17 +186,14 @@
               <!-- right side -->
               <div class="col-6 equipment_items_right">
                 <img src="./img/OppaGM.jpg" width="460" height="620" class="rowImg1" alt="img" />
-
-
               </div>
-
             </div>
 
             <div class="container items_wrapper_left_panel">
 
               <!-- left side -->
               <div class="col-6 equipment_items_right">
-                <img src="./img/OppaFreeWeightSection1.jpg" width="460" height="620" class="rowImg1_right" alt="img" />
+                <img src="./img/OppaFreeWeightSection1.jpg" width="460" height="620" class="rowImg1" alt="img" />
 
               </div>
               <!-- right side -->
@@ -224,6 +222,115 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <!-- !start of the overflow -->
+        <div class="container scrollable-section">
+          <div class="col-10 scrollable-images">
+            <div class="overflow" id="overflow_section">
+
+              <div id="overflow_1">
+                <img src="./img/OppaBackView.jpg" width="460" height="620" class="overflow_imgs" alt="img" />
+
+                <img src="./img/OppaEntrance.jpg" width="460" height="620" class="overflow_imgs" alt="img" id />
+              </div>
+
+              <div id="overflow_2">
+                <img src="./img/OppaFreeWeightSection1.jpg" width="460" height="620" class="overflow_imgs" alt="img" />
+
+                <img src="./img/OppaFW.jpg" width="460" height="620" class="overflow_imgs" alt="img" id />
+              </div>
+
+
+              <div id="overflow_3">
+                <img src="./img/OppaFWSection.jpg" width="460" height="620" class="overflow_imgs" alt="img" />
+
+                <img src="./img/OppaGM.jpg" width="460" height="620" class="overflow_imgs" alt="img" id />
+              </div>
+
+              <div id="overflow_4">
+                <img src="./img/OppaGM1.jpg" width="460" height="620" class="overflow_imgs" alt="img" />
+
+                <img src="./img/OppaGMsideView.jpg" width="460" height="620" class="overflow_imgs" alt="img" id />
+              </div>
+
+              <div id="overflow_5">
+                <img src="./img/OppaTopView.jpg" width="460" height="620" class="overflow_imgs" alt="img" />
+
+                <img src="./img/OppaBackView.jpg" width="460" height="620" class="overflow_imgs" alt="img" id />
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-2" id="selector_wrapper">
+            <button class="btn btn-outline-dark" id="selector_item"><a href="#overflow_1">1</a></button>
+
+            <button class="btn btn-outline-dark" id="selector_item"><a href="#overflow_2">2</a></button>
+
+            <button class="btn btn-outline-dark" id="selector_item"><a href="#overflow_3">3</a></button>
+
+            <button class="btn btn-outline-dark" id="selector_item"><a href="#overflow_4">4</a></button>
+
+            <button class="btn btn-outline-dark" id="selector_item"><a href="#overflow_5">5</a></button>
+
+
+          </div>
+        </div>
+        <!-- !end of the overflow -->
+
+
+        <!-- for mobile new -->
+        <div class="container mobile_view">
+          <div class="mView_items">
+            <img src="./img/OppaBackView.jpg" width="460" height="620" class="m_view_img" alt="img" />
+
+
+          </div>
+          <div class="mView_items">
+            <img src="./img/OppaEntrance.jpg" width="460" height="620" class="m_view_img" alt="img" />
+
+
+          </div>
+          <div class="mView_items">
+            <img src="./img/OppaFW.jpg" width="460" height="620" class="m_view_img" alt="img" />
+
+
+          </div>
+          <div class="mView_items">
+
+            <img src="./img/OppaEntrance.jpg" width="460" height="620" class="m_view_img" alt="img" />
+
+          </div>
+          <div class="mView_items">
+
+            <img src="./img/OppaGM.jpg" width="460" height="620" class="m_view_img" alt="img" />
+
+          </div>
+          <div class="mView_items">
+
+            <img src="./img/OppaFreeWeightSection1.jpg" width="460" height="620" class="m_view_img" alt="img" />
+
+          </div>
+          <div class="mView_items">
+            <img src="./img/OppaBackView.jpg" width="460" height="620" class="m_view_img" alt="img" />
+
+
+          </div>
+          <div class="mView_items">
+
+            <img src="./img/OppaEntrance.jpg" width="460" height="620" class="m_view_img" alt="img" />
+
+          </div>
+          <div class="mView_items">
+            <img src="./img/OppaBackView.jpg" width="460" height="620" class="m_view_img" alt="img" />
+
+
+          </div>
+          <div class="mView_items">
+
+            <img src="./img/OppaEntrance.jpg" width="460" height="620" class="m_view_img" alt="img" />
+
           </div>
         </div>
       </div>
@@ -259,7 +366,7 @@
   <button class="open-button" onclick="openForm()">Chat</button>
 
   <div class="chat-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
+    <form action="#" class="form-container">
       <h4>Hello!</h4>
 
       <label for="msg"><b>Tell us how can we help you?</b></label>

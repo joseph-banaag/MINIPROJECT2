@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="apptm.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Responsiveness/Page_responsiveness.css">
 
 </head>
 
@@ -83,9 +84,9 @@
             </div>
         </div>
     </div>
-    
-    <div class="bg-dark">
-        <div class="container d-flex justify-content-center bg-dark">
+
+    <div class="navigation_menu">
+        <div class="container d-flex justify-content-center ">
             <div class="hamburger-menu-container">
                 <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
                     <div class="bar1"></div>
@@ -131,7 +132,7 @@
                 so honored to be in service. Looking forward to meeting you soon!</p>
         </div>
 
-        <div class="container form_content_wrapper">
+        <div class="form_content_wrapper">
             <div class="appoinment-parent">
                 <div class="appointment-wrapper">
 
@@ -151,12 +152,12 @@
                         <h4 class="formcontTitle">Name:</h4>
                         <div class="forName">
                             <div class="form-floating" id="firstName">
-                                <input type="text" class="form-control firstName" id="floatingName"
+                                <input type="text" class="form-control firstName" id="floatingNameFname"
                                     placeholder="First Name" style="text-transform: capitalize;" required />
                                 <label for="floatingName" class="floatingName">First</label>
                             </div>
                             <div class="form-floating" id="lastName">
-                                <input type="text" class="form-control lastName" id="floatingName"
+                                <input type="text" class="form-control lastName" id="floatingNameLname"
                                     placeholder="Last Name" style="text-transform: capitalize;" required />
                                 <label for="floatingName" class="floatingName ">Last</label>
                             </div>
@@ -199,13 +200,13 @@
             <div class="address-container">
                 <div class="city-zipcode-container">
                     <div class="form-floating" id="city">
-                        <input type="text" class="form-control city" id="floatingName" placeholder="City"
+                        <input type="text" class="form-control city" id="floatingNameCity" placeholder="City"
                             style="text-transform: capitalize;" required />
                         <label for="floatingName" class="floatingName">City</label>
                     </div>
 
                     <div class="form-floating" id="zipcode">
-                        <input type="number" class="form-control zipcode" id="floatingName" placeholder="Street address"
+                        <input type="number" class="form-control zipcode" id="floatingNameZip" placeholder="Street address"
                             required />
                         <label for="floatingName" class="floatingName">ZIP Code</label>
                     </div>

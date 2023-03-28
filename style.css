@@ -164,8 +164,7 @@ body {
 .hero-container h1 {
     color: white;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
-    text-shadow: 1.25px 1.25px black;
-    /* background-color: #2b2d4288; */
+    text-shadow: 2px 2px var(--cyan-800);
 }
 
 .heroArea {
@@ -429,6 +428,9 @@ body {
 
 
 /* !  START OF THE HAMBURGER MENU */
+.navigation_menu {
+    background-color: var(--cyan-700);
+}
 
 .hamburger-menu-container {
     display: flex;
@@ -565,8 +567,6 @@ body {
         margin: auto;
     }
 
-
-
 }
 
 @media (max-width: 1000px) {
@@ -584,8 +584,6 @@ body {
         height: 18rem;
         padding: 1px;
     }
-
-
 
 }
 
@@ -619,15 +617,11 @@ body {
     }
 
     .showEquipment {
-        background: black;
-        backdrop-filter: blur(180px);
-        background-image: url(./img/throughfitness.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         scroll-behavior: smooth;
         background-position: center;
-
 
     }
 
@@ -660,11 +654,6 @@ body {
         width: fit-content;
         margin: auto;
         justify-content: center;
-    }
-
-    .titleFormarquee h5 {
-        color: var(--light) !important;
-        text-shadow: .75px .75px var(--dark900) !important;
     }
 
     #chat-header {
@@ -701,17 +690,18 @@ body {
         margin: 0 auto;
         text-align: center;
         align-content: center;
-        border: 3px solid red;
         align-items: center;
         padding-bottom: 4rem;
     }
 
     .footerLogo {
+
         margin: auto;
         margin-bottom: 3rem;
     }
 
     .footerRight {
+
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -722,13 +712,14 @@ body {
     }
 
     .footerLeft {
+
         width: 100%;
     }
 
     .footerLink-container {
         display: flex;
         width: auto;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         margin: auto;
         text-align: center;
@@ -736,17 +727,19 @@ body {
     }
 
     .footer-right-items {
-        /* margin-bottom: 1rem; */
-        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .vLiner {
-        display: none;
+        width: 13rem;
     }
 
-
-    .marquee-content-wrapper {
-        height: 20rem;
+    .footer-items {
+        /* border: solid 3px yellow; */
+        margin-bottom: 1rem;
+        text-align: center;
     }
 
     .rowContainter {
@@ -754,10 +747,7 @@ body {
         width: 12rem;
     }
 
-    #marquee-list {
-        height: 100%;
 
-    }
 
     .showMore {
         height: 28rem;
@@ -804,11 +794,7 @@ body {
         display: none;
     }
 
-    #xtraDiv {
-        color: black;
-        text-shadow: 1px 1px grey;
-        font-size: 1rem;
-    }
+
 
     .footer-items {
         margin-bottom: 2rem;
